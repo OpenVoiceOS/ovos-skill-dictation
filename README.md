@@ -11,3 +11,4 @@ requires
 
 https://github.com/MycroftAI/mycroft-core/pull/539
     
+https://github.com/MycroftAI/mycroft-core/pull/541
