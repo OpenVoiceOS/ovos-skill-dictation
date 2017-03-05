@@ -6,6 +6,7 @@ usage
 
     start dictating - starts recording words
     stop dictating - stops recording words and saves text file to disk
+    read dictation - reads last dictated words
     
 requires
 
