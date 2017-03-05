@@ -35,6 +35,7 @@ class DictationSkill(MycroftSkill):
         self.words = ""
         self.path = "/home/user/jarbas-core/mycroft/skills/DictationSkill/dictations"
         self.path = os.path.dirname(__file__) + "/dictations"
+        self.reload_skill = False
         # check if folders exist
         if not os.path.exists(self.path):
             os.makedirs(self.path)
@@ -47,13 +48,23 @@ class DictationSkill(MycroftSkill):
         self.register_intent(start_dict_intent,
                              self.handle_start_dict_intent)
 
+        read_dict_intent = IntentBuilder("ReadDictationIntent") \
+            .require("ReadDictationKeyword").build()
+
+        self.register_intent(read_dict_intent,
+                             self.handle_read_last_dictation_intent)
+
     def handle_start_dict_intent(self, message):
         self.dictating = True
         self.speak("Dictation Mode Started")
+        self.words = ""
+
+    def handle_read_last_dictation_intent(self, message):
+        self.speak_dialog("dictation")
+        self.speak(self.words)
 
     def save(self):
         # save
-        print self.words
         #TODO let user set savefile name
         path = self.path + "/" + str(time.time()) + ".txt"
         wfile = open(path, "w")
@@ -66,10 +77,10 @@ class DictationSkill(MycroftSkill):
     def Converse(self, transcript, lang="en-us"):
         if self.dictating:
             #TODO better stop handling, using keyword.voc
-            if ("stop dictating" or "stop dictation" or "dictating stop" or "dictation stop") in transcript[0]:
-                self.dictating= False
+            if "stop" in transcript[0] or "end" in transcript[0]:
                 self.save()
                 self.speak("Dictation Mode Stopped")
+                self.dictating = False
             else:
                 self.words += (transcript[0]) + "\n"
             return True
