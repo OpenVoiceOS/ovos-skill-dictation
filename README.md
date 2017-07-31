@@ -1,15 +1,17 @@
 # mycroft-dictation-skill
+
 writes text to file has user speaks
 
+add a "save_path" to your config file, otherwise a folder named "dictations" will be created inside skill folder
 
-usage
+# usage
 
     start dictating - starts recording words
     stop dictating - stops recording words and saves text file to disk
     read dictation - reads last dictated words
     
-requires
+# requires
 
-https://github.com/MycroftAI/mycroft-core/pull/539
-    
-https://github.com/MycroftAI/mycroft-core/pull/541
+    converse
+    intent parser
+

@@ -37,8 +37,10 @@ class DictationSkill(MycroftSkill):
         self.parser = None
         self.words = ""
         self.dictation_name = None
-        self.path = "/home/user/jarbas-core/mycroft/skills/DictationSkill/dictations"
-        self.path = os.path.dirname(__file__) + "/dictations"
+        try:
+            self.path = self.config["save_path"]
+        except:
+            self.path = os.path.dirname(__file__) + "/dictations"
         self.reload_skill = False
         # check if folders exist
         if not os.path.exists(self.path):
