@@ -32,7 +32,7 @@ class DictationSkill(MycroftSkill):
                     self.dictation_words.append(alias)
         # private email
         if yagmail is not None:
-            mail_config = self.config_core.get("mail", {})
+            mail_config = self.config_core.get("email", {})
             self.email = mail_config.get("email")
             self.password = mail_config.get("password")
 
