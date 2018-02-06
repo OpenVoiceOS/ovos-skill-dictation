@@ -1,32 +1,15 @@
-# Copyright 2016 Mycroft AI, Inc.
-#
-# This file is part of Mycroft Core.
-#
-# Mycroft Core is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# Mycroft Core is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with Mycroft Core.  If not, see <http://www.gnu.org/licenses/>.
-
-
-
+# no
 
 from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill
-from mycroft.util.log import getLogger
-from mycroft.skills.intent_service import IntentParser
-import os, time
+from mycroft.util.log import LOG
+from os.path import dirname, join
+try:
+    import yagmail
+except ImportError:
+    yagmail = None
 
 __author__ = 'jarbas'
-
-logger = getLogger(__name__)
 
 
 class DictationSkill(MycroftSkill):
@@ -37,20 +20,26 @@ class DictationSkill(MycroftSkill):
         self.parser = None
         self.words = ""
         self.dictation_name = None
-        try:
-            self.path = self.config["save_path"]
-        except:
-            self.path = os.path.dirname(__file__) + "/dictations"
-        self.reload_skill = False
-        # check if folders exist
-        if not os.path.exists(self.path):
-            os.makedirs(self.path)
+        self.dictation_words = []
+        path = join(dirname(__file__), "vocab", self.lang,
+                    "DictationKeyword.voc")
+        with open(path, 'r') as voc_file:
+            for line in voc_file.readlines():
+                parts = line.strip().split("|")
+                entity = parts[0]
+                self.dictation_words.append(entity)
+                for alias in parts[1:]:
+                    self.dictation_words.append(alias)
+        # private email
+        if yagmail is not None:
+            mail_config = self.config_core.get("mail", {})
+            self.email = mail_config.get("email")
+            self.password = mail_config.get("password")
 
     def initialize(self):
 
         start_dict_intent = IntentBuilder("StartDictationIntent")\
-            .require("StartKeyword").require(
-            "DictationKeyword").optionally("DictationFileName").build()
+            .require("StartKeyword").require("DictationKeyword").build()
 
         self.register_intent(start_dict_intent,
                              self.handle_start_dictation_intent)
@@ -61,63 +50,66 @@ class DictationSkill(MycroftSkill):
         self.register_intent(stop_dict_intent,
                              self.handle_stop_dictation_intent)
 
-        read_dict_intent = IntentBuilder("StopDictationIntent") \
+        read_dict_intent = IntentBuilder("ReadDictationIntent") \
             .require("ReadKeyword").require("DictationKeyword").build()
 
         self.register_intent(read_dict_intent,
                              self.handle_read_last_dictation_intent)
 
-        self.parser = IntentParser(self.emitter)
-
     def handle_start_dictation_intent(self, message):
-        name = message.data.get("DictationFileName")
-        if not name:
-            self.dictation_name = time.asctime()
-        else:
-            self.dictation_name = name
-
         if not self.dictating:
             self.words = ""
             self.dictating = True
-            self.speak("Dictation Mode Started", expect_response=True)
+            self.speak_dialog("start", expect_response=True)
         else:
-            self.speak("Dictation is already enabled")
+            self.speak_dialog("already_dictating", expect_response=True)
 
     def handle_stop_dictation_intent(self, message):
         if self.dictating:
             self.dictating = False
-            self.speak("Dictation Mode Stopped")
-            self.save()
+            self.speak_dialog("stop")
+            self.send()
         else:
-            self.speak("I am not dictating at this moment")
+            self.speak_dialog("not_dictating")
 
     def handle_read_last_dictation_intent(self, message):
         self.speak_dialog("dictation")
         self.speak(self.words)
 
-    def save(self):
-        # save
-        path = self.path + "/" + self.dictation_name + ".txt"
-        with open(path, "w") as f:
-            f.write(self.words)
-        self.log.info("Dictation saved: " + path)
-        self.speak("Dictation saved with name " + self.dictation_name)
+    def send(self):
+        title = "Mycroft Dictation Skill"
+        body = " ".join(self.words)
+        # try private sending
+        if yagmail is not None and self.email and self.password:
+            with yagmail.SMTP(self.email, self.password) as yag:
+                yag.send(self.email, title, body)
+        else:
+            # else use mycroft home
+            self.send_email(title, body)
+
+        LOG.info("Dictation sent")
+        self.speak_dialog("sent")
 
     def stop(self):
         if self.dictating:
             self.dictating = False
-            self.save()
-            self.speak("Dictation Mode Stopped")
+            self.send()
+
+    def check_for_intent(self, utterance):
+        # check if dictation intent will trigger
+        for word in self.dictation_words:
+            if word in utterance:
+                return True
+        return False
 
     def converse(self, utterances, lang="en-us"):
         if self.dictating:
-            intent, skill_id = self.parser.determine_intent(utterances[0])
-            if skill_id == self.skill_id:
+            if self.check_for_intent(utterances[0]):
                 return False
             else:
                 self.words += (utterances[0]) + "\n"
                 self.speak("", expect_response=True)
-                self.log.info("Dictating: " + utterances[0])
+                LOG.info("Dictating: " + utterances[0])
                 return True
         else:
             return False
