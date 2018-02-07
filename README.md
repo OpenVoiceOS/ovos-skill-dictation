@@ -7,6 +7,7 @@ Saves what user is saying and sends by email
     start dictating - starts recording words
     we found ourselves in - records what you said
     auto complete -  "the streets of Wyoh."
+    undo - reverts last dictation addition
     stop dictating - stops recording words and sends email
     read dictation - reads last dictated words
 
@@ -44,7 +45,7 @@ mycroft home backend
 # TODOs
 
 - skill settings meta
-- autocomplete undo / alternatives intent
+- redo
 
 
 # liked this?

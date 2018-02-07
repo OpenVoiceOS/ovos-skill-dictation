@@ -20,6 +20,7 @@ class DictationSkill(MycroftSkill):
         super(DictationSkill, self).__init__()
         self.dictating = False
         self.parser = None
+        self.dictation_stack = []
         self.words = ""
         self.dictation_name = None
         self.dictation_words = []
@@ -67,15 +68,31 @@ class DictationSkill(MycroftSkill):
                              self.handle_read_last_dictation_intent)
 
         complete_intent = IntentBuilder("AutoCompleteDictationIntent") \
-            .require("AutocompleteKeyword").optionally("DictationKeyword").build()
+            .require("AutocompleteKeyword").require(
+            "DictationKeyword").build()
 
         self.register_intent(complete_intent,
                              self.handle_autocomplete_intent)
+
+        undo_intent = IntentBuilder("UndoDictationIntent") \
+            .require("UndoKeyword").require(
+            "DictationKeyword").build()
+
+        self.register_intent(undo_intent,
+                             self.handle_undo_intent)
 
     def auto_complete(self, text):
         url = self.settings["url"] + "/generate?start_text=" + text + "&n=" + str(self.settings["completions"])
         response = requests.get(url)
         return dict(response.json())
+
+    def handle_undo_intent(self, message):
+        if self.dictating and len(self.dictation_stack):
+            last = self.dictation_stack.pop()
+            self.words = " ".join(self.dictation_stack)
+            self.speak_dialog("undo")
+        else:
+            self.speak_dialog("undo.error")
 
     def handle_autocomplete_intent(self, message):
         if self.dictating:
@@ -87,6 +104,7 @@ class DictationSkill(MycroftSkill):
                 self.words = self.words.rstrip("\n") + (completions[0]) + "\n"
                 self.speak(completions[0], expect_response=True)
                 LOG.info("Dictating: " + completions[0])
+                self.dictation_stack.append(completions[0])
             except Exception as e:
                 LOG.error(e)
                 self.speak_dialog("autocomplete.fail")
@@ -100,6 +118,7 @@ class DictationSkill(MycroftSkill):
             self.speak_dialog("start", expect_response=True)
         else:
             self.speak_dialog("already_dictating", expect_response=True)
+        self.set_context("DictationKeyword", "dictation")
 
     def handle_stop_dictation_intent(self, message):
         if self.dictating:
@@ -108,6 +127,7 @@ class DictationSkill(MycroftSkill):
             self.send()
         else:
             self.speak_dialog("not_dictating")
+        self.remove_context("DictationKeyword")
 
     def handle_read_last_dictation_intent(self, message):
         self.speak_dialog("dictation")
@@ -141,14 +161,18 @@ class DictationSkill(MycroftSkill):
 
     def converse(self, utterances, lang="en-us"):
         if self.dictating:
+            # keep intents working without dictation keyword being needed
+            self.set_context("DictationKeyword", "dictation")
             if self.check_for_intent(utterances[0]):
                 return False
             else:
                 self.words += (utterances[0]) + "\n"
                 self.speak("", expect_response=True)
                 LOG.info("Dictating: " + utterances[0])
+                self.dictation_stack.append(utterances[0])
                 return True
         else:
+            self.remove_context("DictationKeyword")
             return False
 
 
