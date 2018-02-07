@@ -84,7 +84,7 @@ class DictationSkill(MycroftSkill):
                 time = result["time"]
                 LOG.info("auto completed in " + time)
                 completions = result["completions"]
-                self.words += (completions[0]) + "\n"
+                self.words = self.words.rstrip("\n") + (completions[0]) + "\n"
                 self.speak(completions[0], expect_response=True)
                 LOG.info("Dictating: " + completions[0])
             except Exception as e:

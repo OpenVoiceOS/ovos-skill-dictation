@@ -5,6 +5,8 @@ Saves what user is saying and sends by email
 # usage
 
     start dictating - starts recording words
+    we found ourselves in - records what you said
+    auto complete -  "the streets of Wyoh."
     stop dictating - stops recording words and sends email
     read dictation - reads last dictated words
 
@@ -43,4 +45,10 @@ mycroft home backend
 
 - skill settings meta
 - autocomplete undo / alternatives intent
+
+
+# liked this?
+
+- https://www.patreon.com/jarbasAI
+- https://www.paypal.me/jarbasAI
 
