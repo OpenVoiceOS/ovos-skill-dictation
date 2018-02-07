@@ -104,7 +104,7 @@ class DictationSkill(MycroftSkill):
                 self.words = self.words.rstrip("\n") + (completions[0]) + "\n"
                 self.speak(completions[0], expect_response=True)
                 LOG.info("Dictating: " + completions[0])
-                self.dictation_stack.append(completions[0])
+                self.dictation_stack[-1] += completions[0]
             except Exception as e:
                 LOG.error(e)
                 self.speak_dialog("autocomplete.fail")
