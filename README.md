@@ -46,7 +46,6 @@ mycroft home backend
 
 # TODOs
 
-- skill settings meta
 - redo
 - use [PR#1351](https://github.com/MycroftAI/mycroft-core/pull/1351) in converse
 

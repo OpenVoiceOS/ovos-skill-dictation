@@ -1,0 +1,29 @@
+{
+    "name": "Dictation Skill",
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "URL",
+                "fields": [
+                    {
+                        "name": "url",
+                        "type": "text",
+                        "label": "url",
+                        "value": "http://165.227.224.64:8080"
+                    }
+                ]
+            },
+          {
+                "name": "completions",
+                "fields": [
+                    {
+                        "name": "completions",
+                        "type": "number",
+                        "label":"completions",
+                        "value": "1"
+                    }
+                ]
+            }
+        ]
+    }
+}
