@@ -32,11 +32,13 @@ if it does not exist create it, this file must be valid json, add the
 following to it
 
         "email": {
-            "email": "my_mail@fakemail.com",
-            "password": "SECRET"
+            "email": "send_from@gmail.com",
+            "password": "SECRET",
+            "destinatary": "send_to@gmail.com"
         }
 
-email will now be sent from here, the destinatary is the same email
+email will now be sent from here, the destinatary is the same email if not
+provided
 
 skill settings were not used or your email and password would be stored in
 mycroft home backend
@@ -46,6 +48,7 @@ mycroft home backend
 
 - skill settings meta
 - redo
+- use [PR#1351](https://github.com/MycroftAI/mycroft-core/pull/1351) in converse
 
 
 # liked this?

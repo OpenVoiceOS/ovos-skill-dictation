@@ -36,6 +36,7 @@ class DictationSkill(MycroftSkill):
             mail_config = self.config_core.get("email", {})
             self.email = mail_config.get("email")
             self.password = mail_config.get("password")
+            self.target_mail = mail_config.get("destinatary", self.email)
 
     def read_vocab(self, name="DictationKeyword.voc"):
         path = join(dirname(__file__), "vocab", self.lang,
@@ -140,7 +141,7 @@ class DictationSkill(MycroftSkill):
         # try private sending
         if yagmail is not None and self.email and self.password:
             with yagmail.SMTP(self.email, self.password) as yag:
-                yag.send(self.email, title, body)
+                yag.send(self.target_email, title, body)
         else:
             # else use mycroft home
             self.send_email(title, body)
@@ -155,6 +156,7 @@ class DictationSkill(MycroftSkill):
 
     def check_for_intent(self, utterance):
         # check if dictation intent will trigger
+        # TODO use https://github.com/MycroftAI/mycroft-core/pull/1351
         for word in self.dictation_words:
             if word in utterance:
                 return True
