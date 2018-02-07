@@ -7,7 +7,17 @@ Saves what user is saying and sends by email
     start dictating - starts recording words
     stop dictating - stops recording words and sends email
     read dictation - reads last dictated words
-    
+
+# char rnn auto complete
+
+if you want to auto complete your dictations using a [char-rnn](https://karpathy.github.io/2015/05/21/rnn-effectiveness/) , install
+[torch-rnn-server](https://github.com/robinsloan/torch-rnn-server) and provide
+ the url in the skill settings
+
+ Here are [10$ free in digital ocean](https://m.do.co/c/e9f00fee6aa5) if you
+ want to try it, by default the skill points at my digital ocean instance which may go down without notice
+
+
 # privacy
 
 your emails can be read by Mycroft Home, if you desire privacy edit your
@@ -27,4 +37,10 @@ email will now be sent from here, the destinatary is the same email
 
 skill settings were not used or your email and password would be stored in
 mycroft home backend
+
+
+# TODOs
+
+- skill settings meta
+- autocomplete undo / alternatives intent
 

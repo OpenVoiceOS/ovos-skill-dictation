@@ -4,6 +4,8 @@ from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill
 from mycroft.util.log import LOG
 from os.path import dirname, join
+import requests
+
 try:
     import yagmail
 except ImportError:
@@ -21,8 +23,21 @@ class DictationSkill(MycroftSkill):
         self.words = ""
         self.dictation_name = None
         self.dictation_words = []
+        if "url" not in self.settings:
+            self.settings["url"] = "http://165.227.224.64:8080"
+        if "completions" not in self.settings:
+            self.settings["completions"] = 2
+        self.read_vocab("DictationKeyword.voc")
+        self.read_vocab("AutocompleteKeyword.voc")
+        # private email
+        if yagmail is not None:
+            mail_config = self.config_core.get("email", {})
+            self.email = mail_config.get("email")
+            self.password = mail_config.get("password")
+
+    def read_vocab(self, name="DictationKeyword.voc"):
         path = join(dirname(__file__), "vocab", self.lang,
-                    "DictationKeyword.voc")
+                    name)
         with open(path, 'r') as voc_file:
             for line in voc_file.readlines():
                 parts = line.strip().split("|")
@@ -30,11 +45,6 @@ class DictationSkill(MycroftSkill):
                 self.dictation_words.append(entity)
                 for alias in parts[1:]:
                     self.dictation_words.append(alias)
-        # private email
-        if yagmail is not None:
-            mail_config = self.config_core.get("email", {})
-            self.email = mail_config.get("email")
-            self.password = mail_config.get("password")
 
     def initialize(self):
 
@@ -55,6 +65,33 @@ class DictationSkill(MycroftSkill):
 
         self.register_intent(read_dict_intent,
                              self.handle_read_last_dictation_intent)
+
+        complete_intent = IntentBuilder("AutoCompleteDictationIntent") \
+            .require("AutocompleteKeyword").optionally("DictationKeyword").build()
+
+        self.register_intent(complete_intent,
+                             self.handle_autocomplete_intent)
+
+    def auto_complete(self, text):
+        url = self.settings["url"] + "/generate?start_text=" + text + "&n=" + str(self.settings["completions"])
+        response = requests.get(url)
+        return dict(response.json())
+
+    def handle_autocomplete_intent(self, message):
+        if self.dictating:
+            try:
+                result = self.auto_complete(self.words)
+                time = result["time"]
+                LOG.info("auto completed in " + time)
+                completions = result["completions"]
+                self.words += (completions[0]) + "\n"
+                self.speak(completions[0], expect_response=True)
+                LOG.info("Dictating: " + completions[0])
+            except Exception as e:
+                LOG.error(e)
+                self.speak_dialog("autocomplete.fail")
+        else:
+            self.speak_dialog("not_dictating")
 
     def handle_start_dictation_intent(self, message):
         if not self.dictating:
