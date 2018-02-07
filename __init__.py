@@ -30,6 +30,7 @@ class DictationSkill(MycroftSkill):
             self.settings["completions"] = 2
         self.read_vocab("DictationKeyword.voc")
         self.read_vocab("AutocompleteKeyword.voc")
+        self.read_vocab("UndoKeyword.voc")
         # private email
         if yagmail is not None:
             mail_config = self.config_core.get("email", {})

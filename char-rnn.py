@@ -7,4 +7,4 @@ def auto_complete(text):
     return dict(response.json())
 
 
-print auto_complete("we found ourselves in")
+print auto_complete("once upon a time")
