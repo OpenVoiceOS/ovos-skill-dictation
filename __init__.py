@@ -21,8 +21,6 @@ class DictationSkill(MycroftSkill):
         self.dictating = False
         self.parser = None
         self.dictation_stack = []
-        self.words = ""
-        self.dictation_name = None
         self.dictation_words = []
         if "url" not in self.settings:
             self.settings["url"] = "http://165.227.224.64:8080"
@@ -91,7 +89,6 @@ class DictationSkill(MycroftSkill):
     def handle_undo_intent(self, message):
         if self.dictating and len(self.dictation_stack):
             last = self.dictation_stack.pop()
-            self.words = " ".join(self.dictation_stack)
             self.speak_dialog("undo")
         else:
             self.speak_dialog("undo.error")
@@ -103,10 +100,9 @@ class DictationSkill(MycroftSkill):
                 time = result["time"]
                 LOG.info("auto completed in " + time)
                 completions = result["completions"]
-                self.words = self.words.rstrip("\n") + (completions[0]) + "\n"
                 self.speak(completions[0], expect_response=True)
                 LOG.info("Dictating: " + completions[0])
-                self.dictation_stack[-1] += completions[0]
+                self.dictation_stack.append(completions[0])
             except Exception as e:
                 LOG.error(e)
                 self.speak_dialog("autocomplete.fail")
@@ -115,7 +111,7 @@ class DictationSkill(MycroftSkill):
 
     def handle_start_dictation_intent(self, message):
         if not self.dictating:
-            self.words = ""
+            self.dictation_stack = []
             self.dictating = True
             self.speak_dialog("start", expect_response=True)
         else:
@@ -133,11 +129,11 @@ class DictationSkill(MycroftSkill):
 
     def handle_read_last_dictation_intent(self, message):
         self.speak_dialog("dictation")
-        self.speak(self.words)
+        self.speak(" ".join(self.dictation_stack))
 
     def send(self):
         title = "Mycroft Dictation Skill"
-        body = " ".join(self.words)
+        body = " ".join(self.dictation_stack)
         # try private sending
         if yagmail is not None and self.email and self.password:
             with yagmail.SMTP(self.email, self.password) as yag:
@@ -169,7 +165,6 @@ class DictationSkill(MycroftSkill):
             if self.check_for_intent(utterances[0]):
                 return False
             else:
-                self.words += (utterances[0]) + "\n"
                 self.speak("", expect_response=True)
                 LOG.info("Dictating: " + utterances[0])
                 self.dictation_stack.append(utterances[0])
