@@ -99,7 +99,7 @@ class DictationSkill(MycroftSkill):
     def handle_autocomplete_intent(self, message):
         if self.dictating:
             try:
-                result = self.auto_complete(self.words)
+                result = self.auto_complete(self.dictation_stack[-1])
                 time = result["time"]
                 LOG.info("auto completed in " + time)
                 completions = result["completions"]
