@@ -129,11 +129,11 @@ class DictationSkill(MycroftSkill):
 
     def handle_read_last_dictation_intent(self, message):
         self.speak_dialog("dictation")
-        self.speak(" ".join(self.dictation_stack))
+        self.speak("".join(self.dictation_stack))
 
     def send(self):
         title = "Mycroft Dictation Skill"
-        body = " ".join(self.dictation_stack)
+        body = "".join(self.dictation_stack)
         # try private sending
         if yagmail is not None and self.email and self.password:
             with yagmail.SMTP(self.email, self.password) as yag:

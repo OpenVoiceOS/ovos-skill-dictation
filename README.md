@@ -1,6 +1,19 @@
-# mycroft-dictation-skill
+## dictation
+saves user speech and sends by email
 
-Saves what user is saying and sends by email
+## Description
+  char-rnn auto complete for human + machine writing included
+
+## Examples
+* "start dictation"
+* "once upon a time"
+* "auto complete"
+* "end dictation"
+
+## Credits
+JarbasAI
+
+
 
 # usage
 
