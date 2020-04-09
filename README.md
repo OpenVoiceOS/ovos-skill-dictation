@@ -1,11 +1,10 @@
 ## dictation
-[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1QJNhKM8tVv62XSUrST2vnaMXh5ADSyYP8)](https://en.cryptobadges.io/donate/1QJNhKM8tVv62XSUrST2vnaMXh5ADSyYP8)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/jarbasai)
-<span class="badge-patreon"><a href="https://www.patreon.com/jarbasAI" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/JarbasAl)
-
 
 saves user speech and sends by email
+
+NOTE: this is OLD and UNMAINTAINED, a proof of concept for reference only
+
+I will be revisiting this soon
 
 ## Description
   char-rnn auto complete for human + machine writing included
@@ -36,9 +35,6 @@ if you want to auto complete your dictations using a [char-rnn](https://karpathy
 [torch-rnn-server](https://github.com/robinsloan/torch-rnn-server) and provide
  the url in the skill settings
 
- Here are [10$ free in digital ocean](https://m.do.co/c/e9f00fee6aa5) if you
- want to try it, by default the skill points at my digital ocean instance which may go down without notice
-
 
 # privacy
 
@@ -61,16 +57,4 @@ provided
 
 skill settings were not used or your email and password would be stored in
 mycroft home backend
-
-
-# TODOs
-
-- redo
-- use [PR#1351](https://github.com/MycroftAI/mycroft-core/pull/1351) in converse
-
-
-# liked this?
-
-- https://www.patreon.com/jarbasAI
-- https://www.paypal.me/jarbasAI
 
