@@ -1,179 +1,115 @@
-# no
+import os.path
+import time
 
-from adapt.intent import IntentBuilder
-from mycroft.skills.core import MycroftSkill
-from mycroft.util.log import LOG
-from os.path import dirname, join
-import requests
-
-try:
-    import yagmail
-except ImportError:
-    yagmail = None
-
-__author__ = 'jarbas'
+from ovos_bus_client.message import Message
+from ovos_config import Configuration
+from ovos_utils import classproperty
+from ovos_utils.intents import IntentBuilder
+from ovos_utils.process_utils import RuntimeRequirements
+from ovos_workshop.decorators import intent_handler, adds_context, removes_context
+from ovos_workshop.skills import OVOSSkill
 
 
-class DictationSkill(MycroftSkill):
+class DictationSkill(OVOSSkill):
+    """
+    - start dictation
+      - enable continuous conversation mode
+      - capture all utterances in converse method
+    - converse
+      - display dictation on screen live
+    - stop dictation
+      - restore listener mode
+      - save dictation to file
+      - display full dictation on screen
+    """
 
-    def __init__(self):
-        super(DictationSkill, self).__init__()
-        self.dictating = False
-        self.parser = None
-        self.dictation_stack = []
-        self.dictation_words = []
-        if "url" not in self.settings:
-            self.settings["url"] = "http://165.227.224.64:8080"
-        if "completions" not in self.settings:
-            self.settings["completions"] = 2
-        self.read_vocab("DictationKeyword.voc")
-        self.read_vocab("AutocompleteKeyword.voc")
-        self.read_vocab("UndoKeyword.voc")
-        # private email
-        if yagmail is not None:
-            mail_config = self.config_core.get("email", {})
-            self.email = mail_config.get("email")
-            self.password = mail_config.get("password")
-            self.target_mail = mail_config.get("destinatary", self.email)
-
-    def read_vocab(self, name="DictationKeyword.voc"):
-        path = join(dirname(__file__), "vocab", self.lang,
-                    name)
-        with open(path, 'r') as voc_file:
-            for line in voc_file.readlines():
-                parts = line.strip().split("|")
-                entity = parts[0]
-                self.dictation_words.append(entity)
-                for alias in parts[1:]:
-                    self.dictation_words.append(alias)
+    @classproperty
+    def runtime_requirements(self):
+        return RuntimeRequirements(
+            internet_before_load=False,
+            network_before_load=False,
+            gui_before_load=False,
+            requires_internet=False,
+            requires_network=False,
+            requires_gui=False,
+            no_internet_fallback=True,
+            no_network_fallback=True,
+            no_gui_fallback=True,
+        )
 
     def initialize(self):
+        self.dictating = False
 
-        start_dict_intent = IntentBuilder("StartDictationIntent")\
-            .require("StartKeyword").require("DictationKeyword").build()
-
-        self.register_intent(start_dict_intent,
-                             self.handle_start_dictation_intent)
-
-        stop_dict_intent = IntentBuilder("StopDictationIntent") \
-            .require("StopKeyword").require("DictationKeyword").build()
-
-        self.register_intent(stop_dict_intent,
-                             self.handle_stop_dictation_intent)
-
-        read_dict_intent = IntentBuilder("ReadDictationIntent") \
-            .require("ReadKeyword").require("DictationKeyword").build()
-
-        self.register_intent(read_dict_intent,
-                             self.handle_read_last_dictation_intent)
-
-        complete_intent = IntentBuilder("AutoCompleteDictationIntent") \
-            .require("AutocompleteKeyword").require(
-            "DictationKeyword").build()
-
-        self.register_intent(complete_intent,
-                             self.handle_autocomplete_intent)
-
-        undo_intent = IntentBuilder("UndoDictationIntent") \
-            .require("UndoKeyword").require(
-            "DictationKeyword").build()
-
-        self.register_intent(undo_intent,
-                             self.handle_undo_intent)
-
-    def auto_complete(self, text):
-        url = self.settings["url"] + "/generate?start_text=" + text + "&n=" + str(self.settings["completions"])
-        response = requests.get(url)
-        return dict(response.json())
-
-    def handle_undo_intent(self, message):
-        if self.dictating and len(self.dictation_stack):
-            last = self.dictation_stack.pop()
-            self.speak_dialog("undo")
+    @property
+    def default_listen_mode(self):
+        listener_config = Configuration().get("listener", {})
+        if listener_config.get("continuous_listen", False):
+            return "continuous"
+        elif listener_config.get("hybrid_listen", False):
+            return "hybrid"
         else:
-            self.speak_dialog("undo.error")
+            return "wakeword"
 
-    def handle_autocomplete_intent(self, message):
-        if self.dictating:
-            try:
-                result = self.auto_complete(self.dictation_stack[-1])
-                time = result["time"]
-                LOG.info("auto completed in " + time)
-                completions = result["completions"]
-                self.speak(completions[0], expect_response=True)
-                LOG.info("Dictating: " + completions[0])
-                self.dictation_stack.append(completions[0])
-            except Exception as e:
-                LOG.error(e)
-                self.speak_dialog("autocomplete.fail")
-        else:
-            self.speak_dialog("not_dictating")
+    @adds_context("DictationKeyword", "dictation")
+    def start_dictation(self, message=None):
+        message = message or Message("")
+        self.dictation_stack = []
+        self.dictating = True
+        self.bus.emit(message.forward("recognizer_loop:state.set",
+                                      {"mode": "continuous"}))
 
+    @removes_context("DictationKeyword")
+    def stop_dictation(self, message=None):
+        message = message or Message("")
+        self.dictating = False
+        self.bus.emit(message.forward("recognizer_loop:state.set",
+                                      {"mode": self.default_listen_mode}))
+        path = f"{os.path.expanduser('~')}/Documents/dictations"
+        os.makedirs(path, exist_ok=True)
+        name = time.time()  # TODO - allow name requested in intent
+        with open(f"{path}/{name}.txt", "w") as f:
+            f.write("\n".join(self.dictation_stack))
+        self.gui.show_text(f"saved to {path}/{name}.txt")
+
+    @intent_handler(IntentBuilder("StartDictationIntent")
+                    .require("StartKeyword")
+                    .require("DictationKeyword"))
     def handle_start_dictation_intent(self, message):
         if not self.dictating:
-            self.dictation_stack = []
-            self.dictating = True
-            self.speak_dialog("start", expect_response=True)
+            self.speak_dialog("start", wait=True)
         else:
-            self.speak_dialog("already_dictating", expect_response=True)
-        self.set_context("DictationKeyword", "dictation")
+            self.speak_dialog("already_dictating", wait=True)
+        self.start_dictation()  # enable continuous listening, no wake word needed
 
+    @intent_handler(IntentBuilder("StopDictationIntent")
+                    .require("StopKeyword")
+                    .require("DictationKeyword"))
     def handle_stop_dictation_intent(self, message):
         if self.dictating:
-            self.dictating = False
             self.speak_dialog("stop")
-            self.send()
         else:
             self.speak_dialog("not_dictating")
-        self.remove_context("DictationKeyword")
+        self.stop_dictation()
 
+    @intent_handler(IntentBuilder("ReadDictationIntent")
+                    .require("ReadKeyword")
+                    .require("DictationKeyword"))
     def handle_read_last_dictation_intent(self, message):
         self.speak_dialog("dictation")
         self.speak("".join(self.dictation_stack))
 
-    def send(self):
-        title = "Mycroft Dictation Skill"
-        body = "".join(self.dictation_stack)
-        # try private sending
-        if yagmail is not None and self.email and self.password:
-            with yagmail.SMTP(self.email, self.password) as yag:
-                yag.send(self.target_email, title, body)
-        else:
-            # else use mycroft home
-            self.send_email(title, body)
-
-        LOG.info("Dictation sent")
-        self.speak_dialog("sent")
-
     def stop(self):
         if self.dictating:
-            self.dictating = False
-            self.send()
+            self.stop_dictation()
+            return True
 
-    def check_for_intent(self, utterance):
-        # check if dictation intent will trigger
-        # TODO use https://github.com/MycroftAI/mycroft-core/pull/1351
-        for word in self.dictation_words:
-            if word in utterance:
-                return True
-        return False
-
-    def converse(self, utterances, lang="en-us"):
+    def converse(self, message):
+        utterance = message.data["utterances"][0]
         if self.dictating:
-            # keep intents working without dictation keyword being needed
-            self.set_context("DictationKeyword", "dictation")
-            if self.check_for_intent(utterances[0]):
-                return False
+            if self.voc_match("StopKeyword", utterance):
+                self.handle_stop_dictation_intent(message)
             else:
-                self.speak("", expect_response=True)
-                LOG.info("Dictating: " + utterances[0])
-                self.dictation_stack.append(utterances[0])
-                return True
-        else:
-            self.remove_context("DictationKeyword")
-            return False
-
-
-def create_skill():
-    return DictationSkill()
-
+                self.gui.show_text(utterance)
+                self.dictation_stack.append(utterance)
+            return True
+        return False
