@@ -4,7 +4,6 @@ import time
 from ovos_bus_client.message import Message
 from ovos_config import Configuration
 from ovos_utils import classproperty
-from ovos_utils.intents import IntentBuilder
 from ovos_utils.process_utils import RuntimeRequirements
 from ovos_workshop.decorators import intent_handler, adds_context, removes_context
 from ovos_workshop.skills import OVOSSkill
@@ -55,6 +54,7 @@ class DictationSkill(OVOSSkill):
         message = message or Message("")
         self.dictation_stack = []
         self.dictating = True
+        self.file_name = message.data.get("name", str(time.time()))
         self.bus.emit(message.forward("recognizer_loop:state.set",
                                       {"mode": "continuous"}))
 
@@ -66,14 +66,12 @@ class DictationSkill(OVOSSkill):
                                       {"mode": self.default_listen_mode}))
         path = f"{os.path.expanduser('~')}/Documents/dictations"
         os.makedirs(path, exist_ok=True)
-        name = time.time()  # TODO - allow name requested in intent
+        name = self.file_name or time.time()
         with open(f"{path}/{name}.txt", "w") as f:
             f.write("\n".join(self.dictation_stack))
         self.gui.show_text(f"saved to {path}/{name}.txt")
 
-    @intent_handler(IntentBuilder("StartDictationIntent")
-                    .require("StartKeyword")
-                    .require("DictationKeyword"))
+    @intent_handler("start_dictation.intent")
     def handle_start_dictation_intent(self, message):
         if not self.dictating:
             self.speak_dialog("start", wait=True)
@@ -81,22 +79,13 @@ class DictationSkill(OVOSSkill):
             self.speak_dialog("already_dictating", wait=True)
         self.start_dictation()  # enable continuous listening, no wake word needed
 
-    @intent_handler(IntentBuilder("StopDictationIntent")
-                    .require("StopKeyword")
-                    .require("DictationKeyword"))
+    @intent_handler("stop_dictation.intent")
     def handle_stop_dictation_intent(self, message):
         if self.dictating:
             self.speak_dialog("stop")
         else:
             self.speak_dialog("not_dictating")
         self.stop_dictation()
-
-    @intent_handler(IntentBuilder("ReadDictationIntent")
-                    .require("ReadKeyword")
-                    .require("DictationKeyword"))
-    def handle_read_last_dictation_intent(self, message):
-        self.speak_dialog("dictation")
-        self.speak("".join(self.dictation_stack))
 
     def stop(self):
         if self.dictating:
