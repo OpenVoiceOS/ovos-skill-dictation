@@ -1,18 +1,40 @@
-
 {
-    "skill_id": "skill-dictation",
+    "title": "",
+    "url": "https://github.com/OpenVoiceOS/skill-ovos-dictation",
+    "summary": "",
+    "short_description": null,
+    "description": "",
+    "examples": [
+        "start dictation",
+        "end dictation"
+    ],
+    "desktopFile": false,
+    "warning": "",
+    "systemDeps": false,
     "requirements": {
         "python": [],
         "system": {},
         "skill": []
     },
-    "url": "https://github.com/JarbasSkills/skill-dictation.git",
-    "authorname": "JarbasSkills",
-    "skillname": "skill-dictation",
-    "branch": "dev",
-    "examples": [],
+    "incompatible_skills": [],
+    "platforms": [
+        "i386",
+        "x86_64",
+        "ia64",
+        "arm64",
+        "arm"
+    ],
+    "branch": "master",
+    "license": "Unknown",
+    "icon": "",
+    "category": "",
+    "categories": [],
+    "tags": [],
     "credits": [
         "JarbasAI"
     ],
-    "foldername": "skill-dictation"
+    "skillname": "skill-ovos-dictation",
+    "authorname": "OpenVoiceOS",
+    "foldername": null,
+    "dictation": "continuously transcribes user speech to text file while enabled captures utterances and disables wake words while active     start dictating - starts recording words     captain's log, stardate ... - records what you said     stop dictating - stops recording words and sends email"
 }
