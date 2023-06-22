@@ -1,0 +1,33 @@
+# Specify intents to test
+# Basic intent match tests only:
+en-us:
+  start_dictation:
+    - activate text transcription
+    - start dictation
+    - begin text capture
+    - record text please
+    - begin textual documentation
+    - start text transcription process
+    - start dictation named game session four:
+        - name: game session four
+  stop_dictation:
+    - deactivate text transcription
+    - terminate transcription
+    - end dictation
+    - stop transcription
+    - stop capturing text
+    - disable dictation mode
+
+# More to come...
+
+# Intent tests with specific vocab/entity extraction tests:
+#lang:
+#  intent_name:
+#    - example_utterance:
+#        - expected_vocab_key: expected_vocab_value
+#        - expected_entity_key: expected_entity_value
+
+# Test phrases that should NOT match any skill intent:
+#unmatched intents:
+#  lang:
+#    - example unmatched utterance
