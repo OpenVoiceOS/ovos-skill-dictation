@@ -2,7 +2,7 @@
 
 continuously transcribes user speech to text file while enabled, made for [ovos-dinkum-listener](https://github.com/OpenVoiceOS/ovos-dinkum-listener)
 
-A similar skill that records audio instead of text transcriptions is [NeonGeckoCom/skill-audio-recording](https://github.com/NeonGeckoCom/skill-audio-recording)
+A similar skill that records audio instead of text transcriptions is [OpenVoiceOS/skill-ovos-audio-recording](https://github.com/OpenVoiceOS/skill-ovos-audio-recording)
 
 ## About
 
