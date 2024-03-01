@@ -1,0 +1,33 @@
+# Specify resources to test here.
+
+# Specify languages to be tested
+languages:
+  - "en-us"
+
+# vocab is lowercase .voc file basenames
+vocab:
+  - StopKeyword
+
+# dialog is .dialog file basenames (case-sensitive)
+dialog:
+  - stop
+  - start
+  - not_dictating
+  - dictation
+  - already_dictating
+
+# regex entities, not necessarily filenames
+regex: []
+  # en-us:
+  #   - "(the|is) (?P<LawOfRobotics>.*) (law of robotic|law of robotics)"
+  # de-de:
+  #   - "(the|is) (?P<LawOfRobotics>.*) (law of robotic|law of robotics)"
+
+intents:
+  # Padatious intents are the `.intent` file names
+  padatious:
+    - start_dictation
+    - stop_dictation
+
+  # Adapt intents are the names passed to `IntentBuilder`
+  adapt: []
