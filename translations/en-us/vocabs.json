@@ -1,0 +1,9 @@
+{
+    "/intents/StopKeyword.voc": [
+        "stop",
+        "disengage",
+        "off",
+        "abort",
+        "offline"
+    ]
+}
