@@ -37,7 +37,9 @@ class DictationSkill(OVOSSkill):
         )
 
     def initialize(self):
+        self.file_name = None
         self.dictating = False
+        self.dictation_stack = []
 
     @property
     def default_listen_mode(self):
@@ -95,10 +97,36 @@ class DictationSkill(OVOSSkill):
     def converse(self, message):
         utterance = message.data["utterances"][0]
         if self.dictating:
-            if self.voc_match("StopKeyword", utterance):
+            if self.voc_match(utterance, "StopKeyword"):
                 self.handle_stop_dictation_intent(message)
             else:
                 self.gui.show_text(utterance)
                 self.dictation_stack.append(utterance)
             return True
         return False
+
+
+if __name__ == "__main__":
+    from ovos_utils.fakebus import FakeBus
+
+
+    # print speak for debugging
+    def spk(utt, *args, **kwargs):
+        print(utt)
+
+
+    s = DictationSkill(skill_id="fake.test", bus=FakeBus())
+    s.speak = spk
+
+    s.handle_stop_dictation_intent(Message(""))
+    # I am not dictating at this moment
+    s.handle_start_dictation_intent(Message(""))
+    # ok, i am ready for dictation
+    s.converse(Message("", {"utterances": ["test"]}))
+    s.converse(Message("", {"utterances": ["test"]}))
+    s.converse(Message("", {"utterances": ["test"]}))
+    s.converse(Message("", {"utterances": ["stop"]}))
+    # dictation stopped
+    s.converse(Message("", {"utterances": ["test"]}))
+
+    assert s.dictation_stack == ['test', 'test', 'test']
