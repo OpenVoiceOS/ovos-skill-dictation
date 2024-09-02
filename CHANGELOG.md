@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/HEAD)
+## [V0.1.0a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.1.0a2) (2024-09-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/31f7b8b60b816c2b227f8e3478daeb32d73c02b6...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/31f7b8b60b816c2b227f8e3478daeb32d73c02b6...V0.1.0a2)
 
 **Fixed bugs:**
 
