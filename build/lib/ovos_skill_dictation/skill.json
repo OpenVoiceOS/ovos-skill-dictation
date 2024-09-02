@@ -1,0 +1,18 @@
+
+{
+    "skill_id": "skill-dictation",
+    "requirements": {
+        "python": [],
+        "system": {},
+        "skill": []
+    },
+    "url": "https://github.com/JarbasSkills/skill-dictation.git",
+    "authorname": "JarbasSkills",
+    "skillname": "skill-dictation",
+    "branch": "dev",
+    "examples": [],
+    "credits": [
+        "JarbasAI"
+    ],
+    "foldername": "skill-dictation"
+}
