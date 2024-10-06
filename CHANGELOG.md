@@ -1,5 +1,19 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Add Catalan translation [\#10](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/10) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Add Catalan translation [\#9](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/9) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- ca [\#8](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/8) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [V0.1.0](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.1.0) (2024-09-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.1.0a2...V0.1.0)
+
 ## [V0.1.0a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.1.0a2) (2024-09-02)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/31f7b8b60b816c2b227f8e3478daeb32d73c02b6...V0.1.0a2)
