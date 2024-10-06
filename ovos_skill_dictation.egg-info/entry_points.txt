@@ -1,3 +1,0 @@
-[ovos.plugin.skill]
-ovos-skill-dictation.openvoiceos=ovos_skill_dictation:DictationSkill
-
