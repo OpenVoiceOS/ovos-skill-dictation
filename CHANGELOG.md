@@ -1,5 +1,9 @@
 # Changelog
 
+## [V0.2.0a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.0a2) (2024-10-06)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.0a1...V0.2.0a2)
+
 ## [V0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.0a1) (2024-10-06)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.1.0...V0.2.0a1)
