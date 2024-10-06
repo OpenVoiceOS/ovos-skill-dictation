@@ -1,0 +1,19 @@
+{
+  "/dialogs/already_dictating.dialog": [
+    "El dictat ja està habilitat"
+  ],
+  "/dialogs/dictation.dialog": [
+    "L'últim dictat és",
+    "Lectura del darrer dictat"
+  ],
+  "/dialogs/stop.dialog": [
+    "El dictat ha acabat"
+  ],
+  "/dialogs/start.dialog": [
+    "Comença el dictat",
+    "D'acord, estic preparat per al dictat"
+  ],
+  "/dialogs/not_dictating.dialog": [
+    "En aquest moment, no estic dictant"
+  ]
+}
