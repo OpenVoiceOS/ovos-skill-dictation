@@ -1,0 +1,128 @@
+(activa|permet) (el|es) dictat amb (el|es) nom {name}
+(activa|permet) (la|sa) transcripció (de|del|des) text amb (el|es) nom {name}
+(comença|incia) la captura (de|del|des) text
+(comença|inicia) (el|es) dictat (anomenat|amb el nom|amb nom|amb es nom) {name}
+(comença|inicia) (la|sa) captura (de|del|des) text
+(comença|inicia) (la|sa) presa (de|de les|de ses) nota (amb nom|amb el nom|amb es nom|anomenada|) {name}
+(comença|inicia) (la|sa) presa (de|de les|de ses) notes (amb nom|amb el nom|amb es nom|anomenades|) {name}
+(comença|inicia) a capturar text
+(grava|enregistra) (el|es) text
+(grava|enregistra) (el|es) text ara
+(inicia|comença) (la|sa) gravació (del|des|de) text
+(inicia|iniciem) (el|es) dictat
+activa (el|es) dictat
+activa (el|es) dictat amb (el|es) nom {name}
+activa (el|es) mode (de|) dictat
+activa (el|es) mode de captura de text
+activa (el|es) mode de dictat per a {name}
+activa (el|es) mode de transcripció de text amb (el|es) nom {name}
+activa (el|es) mode de veu a text
+activa (la|sa) captura de text
+activa (la|sa) transcripció de text
+activa l'enregistrament de veu a text com a {name}
+activem (el|es) mode (de|) dictat
+activem (la|sa) transcripció (de|del|des) text
+comencem (el|es) dictat
+comencem (el|es) dictat anomenat {name}
+comencem a (desar|guardar) a text
+comenceu a prendre notes ara si us plau, amb nom {name}
+comenceu a prendre notes, si us plau, amb nom {name}
+comença (el|es) dictat
+comença (el|es) dictat anomenat {name}
+comença (la|sa) captura de text
+comença (la|sa) compilació de notes
+comença (la|sa) compilació de notes anomenada {name}
+comença (la|sa) creació de transcripcions de text
+comença (la|sa) documentació textual
+comença (la|sa) transcripció
+comença (la|sa) transcripció (de|del|des) text
+comença (la|sa) transcripció textual
+comença a (anotar|prendre|apuntar) notes
+comença a (desar|guardar) (les|ses) paraules parlades
+comença a (desar|guardar) a text
+comença a (desar|guardar) com a text
+comença a (gravar|enregistrar) (el|es) text
+comença a (gravar|enregistrar) informació verbal
+comença a capturar (el|es) text anomenat {name}
+comença a capturar text com a {name}
+comença a convertir (la|sa) veu en text
+comença a escriure des de (la|sa|) veu
+comença a escriure text
+comença a escriure text com a {name}
+comença a fer dictats
+comença a gravar (el|es) text com a {name}
+comença a gravar paraules com a {name}
+comença a gravar text com a {name}
+comença a prendre notes
+comença a prendre notes (amb nom|amb el nom|amb es nom|anomenades|) {name}
+comença a prendre notes amb (el|es) nom de {name} si us plau
+comença a prendre notes amb (el|es) nom de {nom}
+comença a prendre notes amb (el|es) nom {name}
+comença a prendre notes ara
+comença a prendre notes ara amb (el|es|) nom (de|) {name}
+comença a prendre notes ara si us plau
+comença a prendre notes com a {name}
+comença a prendre notes si us plau
+comença a prendre notes textuals
+comença a prendre un dictat anomenat {name}
+comença a transcriure
+comença a transcriure (l'|s')àudio com a {name}
+comença a transcriure com a {name}
+comença la captura de text anomenada {name}
+comença la transcripció de text anomenada {name}
+enregistra (el|es) text (si us plau|sisplau)
+enregistra (el|es) text anomenat {name} si us plau
+enregistra (el|es) text ara si us plau
+enregistra (el|es) text ara, (si us plau|sisplau), (amb nom|anomenat) {name}
+enregistra (el|es) text com a {name} ara si us plau
+enregistra (el|es) text, si us plau, anomenat {name}
+grava (el|es) text anomenat {name}
+grava (el|es) text ara anomenat {name}
+grava (el|es) text com a {name}
+grava (el|es) text com a {name} ara
+habilita (la|sa) funció de transcripció
+habilita la transcripció de text
+inicia (el|es) desament a text
+inicia (el|es) dictat
+inicia (el|es) dictat anomenat {name}
+inicia (el|es) dictat de text
+inicia (el|es) procés de transcripció (de|del|des) text
+inicia (l'enregistrament|s'enregistrament|el gravat|es gravat) (de|del|des|el|es) text
+inicia (l'enregistrament|s'enregistrament|la gravació|sa gravació) de veu a text
+inicia (l'|s')enregistrament de notes
+inicia (l'|s')escriptura (de|del|des) text
+inicia (la|sa) captura de text
+inicia (la|sa) captura de text amb (el|es) nom {name}
+inicia (la|sa) captura de text anomenat {name}
+inicia (la|sa) conversió de veu a text
+inicia (la|sa) generació de contingut textual
+inicia (la|sa) presa de notes
+inicia (la|sa) presa de notes anomenada {name} si us plau
+inicia (la|sa) presa de notes ara
+inicia (la|sa) presa de notes, si us plau, amb nom {name}
+inicia (la|sa) transcripció
+inicia (la|sa) transcripció com a {name}
+inicia la captura de text anomenada {name}
+inicia la captura de text com a {name}
+inicia la conversió de veu a text anomenada {name}
+inicia la gravació (de|del|des) text com a {name}
+inicia la presa de notes
+inicia la presa de notes anomenada {name}
+inicia la presa de notes ara anomenada {name}
+inicia la presa de notes ara si us plau, amb nom {name}
+inicia la presa de notes com a {name}
+inicia un dictat anomenat {name}
+iniciem (el|es) dictat anomenat {name}
+inicieu (la|sa) presa de notes ara si us plau
+inicieu (la|sa) presa de notes, si us plau
+podem començar (el|es) dictat(?|)
+podem començar a (desar|guardar) a text(?|)
+podem començar un dictat anomenat {name}
+pots activar (el|es) mode de dictat(?|)
+pots activar (la|sa) transcripció de text(?|)
+pots començar (el|es) dictat anomenat {name}
+pots començar (el|es) dictat(?|)
+pots començar a (desar|guardar) a text
+pots iniciar (el|es) desament a text(?|)
+pots iniciar (el|es) dictat(?|)
+pots iniciar un dictat anomenat {name}

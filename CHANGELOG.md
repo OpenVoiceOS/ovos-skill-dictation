@@ -1,16 +1,31 @@
 # Changelog
 
-## [V0.1.0a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.1.0a2) (2024-09-02)
+## [0.2.0a4](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.0a4) (2024-10-15)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/31f7b8b60b816c2b227f8e3478daeb32d73c02b6...V0.1.0a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.0a3...0.2.0a4)
 
-**Fixed bugs:**
+**Merged pull requests:**
 
-- fix/stop\_dictation [\#7](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/7) ([JarbasAl](https://github.com/JarbasAl))
+- fix:update\_requirements [\#12](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/12) ([JarbasAl](https://github.com/JarbasAl))
+- Add Catalan translation [\#11](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/11) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
-**Closed issues:**
+## [V0.2.0a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.0a3) (2024-10-06)
 
-- yagmail error [\#1](https://github.com/OpenVoiceOS/ovos-skill-dictation/issues/1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.0a2...V0.2.0a3)
+
+## [V0.2.0a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.0a2) (2024-10-06)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.0a1...V0.2.0a2)
+
+## [V0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.0a1) (2024-10-06)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.1.0...V0.2.0a1)
+
+**Merged pull requests:**
+
+- Add Catalan translation [\#10](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/10) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Add Catalan translation [\#9](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/9) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- ca [\#8](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/8) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
