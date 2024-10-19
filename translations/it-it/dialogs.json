@@ -1,0 +1,19 @@
+{
+  "/dialogs/already_dictating.dialog": [
+    "Modo dettato già attivo"
+  ],
+  "/dialogs/dictation.dialog": [
+    null,
+    null
+  ],
+  "/dialogs/stop.dialog": [
+    "Modo dettato interrotto"
+  ],
+  "/dialogs/start.dialog": [
+    "Modo dettato attivato",
+    "ok, ho attivato il modo dettato"
+  ],
+  "/dialogs/not_dictating.dialog": [
+    "Il modo dettato è disabilitato"
+  ]
+}
