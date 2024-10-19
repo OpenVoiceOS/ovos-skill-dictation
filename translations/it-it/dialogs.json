@@ -3,8 +3,8 @@
     "Modo dettato già attivo"
   ],
   "/dialogs/dictation.dialog": [
-    null,
-    null
+    "L'ultimo dettato è stato",
+    "Lettura dell'ultimo dettato"
   ],
   "/dialogs/stop.dialog": [
     "Modo dettato interrotto"
