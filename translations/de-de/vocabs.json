@@ -1,0 +1,9 @@
+{
+  "/intents/StopKeyword.voc": [
+    "stopp\nstoppen\nstoppe",
+    "aufhören",
+    "aus",
+    "abbrechen",
+    "offline"
+  ]
+}
