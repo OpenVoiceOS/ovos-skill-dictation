@@ -1,0 +1,19 @@
+{
+  "/dialogs/already_dictating.dialog": [
+    "Diktering er allerede aktiveret"
+  ],
+  "/dialogs/dictation.dialog": [
+    "Det sidste diktat var",
+    "Læser sidste diktat"
+  ],
+  "/dialogs/stop.dialog": [
+    "diktat stoppet"
+  ],
+  "/dialogs/start.dialog": [
+    "diktat startede",
+    "ok, jeg er klar til diktat"
+  ],
+  "/dialogs/not_dictating.dialog": [
+    "Jeg dikterer ikke i øjeblikket"
+  ]
+}
