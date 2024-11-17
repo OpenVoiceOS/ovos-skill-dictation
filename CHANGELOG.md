@@ -1,20 +1,25 @@
 # Changelog
 
-## [0.2.1a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.1a1) (2024-10-31)
+## [0.2.3a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.3a1) (2024-11-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.1a1...0.2.1a1)
-
-**Merged pull requests:**
-
-- fix:allow workshop 3.0.0 [\#15](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/15) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.2.1a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.1a1) (2024-10-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.0...0.2.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.2a1...0.2.3a1)
 
 **Merged pull requests:**
 
-- accepted addition translation [\#14](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/14) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- fix: skilljson [\#18](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/18) ([JarbasAl](https://github.com/JarbasAl))
+- da-dk/translate [\#17](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/17) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [0.2.2a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.2a1) (2024-11-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.1...0.2.2a1)
+
+**Merged pull requests:**
+
+- de-de/translate [\#16](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/16) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [V0.2.1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.1) (2024-11-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.1...V0.2.1)
 
 
 

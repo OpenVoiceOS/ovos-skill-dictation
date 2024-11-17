@@ -1,0 +1,13 @@
+{
+  "skill_id": "ovos-skill-dictation.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-dictation",
+  "name": "Dictation skill",
+  "description": "continuously transcribes user speech to text file while enabled",
+  "examples": [
+    "start dictation",
+    "end dictation"
+  ],
+  "tags": [
+    "productivity"
+  ]
+}

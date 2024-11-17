@@ -1,0 +1,19 @@
+{
+  "/dialogs/already_dictating.dialog": [
+    "Diktieren ist bereits aktiviert"
+  ],
+  "/dialogs/dictation.dialog": [
+    "Das letzte Diktat war",
+    "Lese letztes Diktat vor"
+  ],
+  "/dialogs/stop.dialog": [
+    "Diktat gestoppt"
+  ],
+  "/dialogs/start.dialog": [
+    "Diktat gestartet",
+    "ok, ich bin bereit zum Diktieren"
+  ],
+  "/dialogs/not_dictating.dialog": [
+    "Ich zeichne im Moment kein Diktat auf"
+  ]
+}
