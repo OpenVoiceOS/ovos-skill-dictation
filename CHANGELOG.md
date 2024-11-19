@@ -1,16 +1,16 @@
 # Changelog
 
-## [0.2.4a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.4a1) (2024-11-17)
+## [0.2.5a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.5a1) (2024-11-19)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.3...0.2.4a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.4...0.2.5a1)
 
 **Merged pull requests:**
 
-- added italian [\#20](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/20) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- fix:allow workshop 3.0.0 [\#22](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/22) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.2.3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.3) (2024-11-17)
+## [V0.2.4](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.4) (2024-11-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.3...V0.2.3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.4...V0.2.4)
 
 
 
