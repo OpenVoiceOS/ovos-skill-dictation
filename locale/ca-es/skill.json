@@ -1,0 +1,13 @@
+{
+  "skill_id": "ovos-skill-dictation.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-dictation",
+  "name": "Habilitat de dictat",
+  "description": "Mentre està activada, transcriu de forma contínua la parla de l'usuari en un fitxer de text",
+  "examples": [
+    "comença el dictat",
+    "finalitza el dictat"
+  ],
+  "tags": [
+    "productivitat"
+  ]
+}
