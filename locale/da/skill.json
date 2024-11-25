@@ -5,7 +5,7 @@
   "description": "transskriberer løbende brugertale til tekstfil, mens den er aktiveret",
   "examples": [
     "start diktat",
-    null
+    "afslut diktat"
   ],
   "tags": [
     "produktivitet"
