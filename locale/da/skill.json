@@ -1,0 +1,13 @@
+{
+  "skill_id": "ovos-skill-dictation.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-dictation",
+  "name": "Diktatfærdighed",
+  "description": "transskriberer løbende brugertale til tekstfil, mens den er aktiveret",
+  "examples": [
+    "start diktat",
+    "afslut diktat"
+  ],
+  "tags": [
+    "produktivitet"
+  ]
+}
