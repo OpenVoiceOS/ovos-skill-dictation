@@ -1,0 +1,19 @@
+{
+    "/dialogs/already_dictating.dialog": [
+        "Diktaketa gaituta dago lehendik"
+    ],
+    "/dialogs/dictation.dialog": [
+        "Azken diktaketa irakurtzen",
+        "Azken diktaketa zen"
+    ],
+    "/dialogs/stop.dialog": [
+        "diktaketa gelditu da"
+    ],
+    "/dialogs/start.dialog": [
+        "diktaketa hasi da",
+        "ok. Prest nago diktaketarako"
+    ],
+    "/dialogs/not_dictating.dialog": [
+        "Ez naiz diktatzen ari une honetan"
+    ]
+}
