@@ -1,16 +1,16 @@
 # Changelog
 
-## [0.2.8a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.8a1) (2024-11-30)
+## [0.2.9a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.9a1) (2024-12-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.7...0.2.8a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.8...0.2.9a1)
 
 **Merged pull requests:**
 
-- de-de/translate [\#28](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/28) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- import galician translations [\#30](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/30) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.2.7](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.7) (2024-11-25)
+## [V0.2.8](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.8) (2024-11-30)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.7...V0.2.7)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.8...V0.2.8)
 
 
 
