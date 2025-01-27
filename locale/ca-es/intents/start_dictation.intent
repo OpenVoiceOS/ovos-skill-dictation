@@ -66,7 +66,7 @@ comença a prendre notes si us plau
 comença a prendre notes textuals
 comença a prendre un dictat anomenat {name}
 comença a transcriure
-comença a transcriure (l'|s')àudio com a {name}
+comença a transcriure (l'|s'|)àudio com a {name}
 comença a transcriure com a {name}
 comença la captura de text anomenada {name}
 comença la transcripció de text anomenada {name}
@@ -89,8 +89,8 @@ inicia (el|es) dictat de text
 inicia (el|es) procés de transcripció (de|del|des) text
 inicia (l'enregistrament|s'enregistrament|el gravat|es gravat) (de|del|des|el|es) text
 inicia (l'enregistrament|s'enregistrament|la gravació|sa gravació) de veu a text
-inicia (l'|s')enregistrament de notes
-inicia (l'|s')escriptura (de|del|des) text
+inicia (l'|s'|)enregistrament de notes
+inicia (l'|s'|)escriptura (de|del|des) text
 inicia (la|sa) captura de text
 inicia (la|sa) captura de text amb (el|es) nom {name}
 inicia (la|sa) captura de text anomenat {name}
