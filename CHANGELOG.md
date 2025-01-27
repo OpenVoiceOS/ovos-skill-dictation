@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.12a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.12a1) (2025-01-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.11a1...0.2.12a1)
+
+**Merged pull requests:**
+
+- fix:catalan intents punctuation [\#36](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/36) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.11a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.11a1) (2025-01-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.10...0.2.11a1)
