@@ -1,16 +1,24 @@
 # Changelog
 
-## [0.2.10a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.10a1) (2024-12-02)
+## [0.2.12a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.12a1) (2025-01-27)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.9...0.2.10a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.11a1...0.2.12a1)
 
 **Merged pull requests:**
 
-- import galician and basque translations [\#32](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/32) ([JarbasAl](https://github.com/JarbasAl))
+- fix:catalan intents punctuation [\#36](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/36) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.2.9](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.9) (2024-12-02)
+## [0.2.11a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.11a1) (2025-01-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.9...V0.2.9)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.10...0.2.11a1)
+
+**Merged pull requests:**
+
+- fix automations [\#34](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/34) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.2.10](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.10) (2024-12-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.10...V0.2.10)
 
 
 
