@@ -1,7 +1,7 @@
 Aktiviere die Texttranskription
 Aufzeichnen von Notizen mit dem Namen {name} starten
 Aufzeichnen von Notizen mit dem Namen {name} beginnen
-Beginne  mit der Notizenzusammenstellung
+Beginne mit der Notizenzusammenstellung
 Beginne Diktat mit dem {name}
 Beginne Erfassung von Text mit dem Namen {name}
 Beginne Notizaufzeichnung
@@ -20,7 +20,7 @@ Beginne diktieren
 Beginne ein Diktat
 Starte ein Diktat
 Beginne jetzt Notizaufzeichnung mit dem Namen {name}
-Beginne jetzt mit der Notizaufzeichnung  mit dem Namen {name} bitte
+Beginne jetzt mit der Notizaufzeichnung mit dem Namen {name} bitte
 Beginne jetzt mit der Notizaufzeichnung bitte
 Beginne mit dem Aufzeichnen von Notizen mit dem Namen {name}
 Beginne mit dem Noitzenmachen mit dem Namen {name}
@@ -31,7 +31,7 @@ Beginne mit der Audiotranskription als {name}
 Beginne mit der Aufzeichnung verbaler Informationen
 Beginne mit der Aufzeichnung von Wörtern als {name}
 Beginne mit der Erstellung des Texttranskripts
-Beginne mit der Notizaufzeichnung  mit dem Namen {name} bitte
+Beginne mit der Notizaufzeichnung mit dem Namen {name} bitte
 Beginne mit der Notizenzusammenstellung mit dem Namen {name}
 Beginne mit der Textaufzeichnung
 Beginne mit der Textaufzeichnung als {name}
@@ -78,9 +78,9 @@ Lass uns ein Diktat mit dem Namen {name} starten
 Lass uns mit Speichern eines Textes beginnen
 Lass uns mit Speichern eines Textes starten
 Lass uns mit dem Diktat beginnen
-Nehme bitte  einen Text mit der Bezeichnung {name} auf
+Nehme bitte einen Text mit der Bezeichnung {name} auf
 Nehme bitte einen Text auf
-Nehme bitte einen Text mit dem Namen {name}  auf
+Nehme bitte einen Text mit dem Namen {name} auf
 Nehme bitte jetzt einen Text auf
 Nehme bitte jetzt einen Text mit der Bezeichnung {name} auf
 Neues Diktat mit dem Namen {name}
@@ -89,7 +89,7 @@ Sprach-zu-Text-Aufzeichnung als {name} aktivieren
 Sprach-zu-Text-Aufzeichnung starten
 Sprache-zu-Text-Konvertierung starten
 Start Textaufzeichnung
-Starte Diktat mit Namen {name} 
+Starte Diktat mit Namen {name}
 Beginne Diktat mit Namen {name}
 Starte Erfassung von Text mit dem Namen {name}
 Starte Textaufzeichnung als {name}
@@ -108,7 +108,7 @@ Text als {name} aufzeichnen
 Text aufzeichnen
 Text jetzt als {name} aufzeichnen
 Text mit dem Namen {name} aufzeichnen
-Text schreiben als {name}starten
+Text schreiben als {name} starten
 Text schreiben als {name} beginnen
 Text schreiben starten
 Text schreiben beginnen
