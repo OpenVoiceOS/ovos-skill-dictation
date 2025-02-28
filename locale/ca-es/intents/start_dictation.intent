@@ -25,8 +25,8 @@ activem (la|sa) transcripció (de|del|des) text
 comencem (el|es) dictat
 comencem (el|es) dictat anomenat {name}
 comencem a (desar|guardar) a text
-comenceu a prendre notes ara si us plau, amb nom {name}
-comenceu a prendre notes, si us plau, amb nom {name}
+comenceu a prendre notes ara si us plau amb nom {name}
+comenceu a prendre notes si us plau amb nom {name}
 comença (el|es) dictat
 comença (el|es) dictat anomenat {name}
 comença (la|sa) captura de text
@@ -73,9 +73,9 @@ comença la transcripció de text anomenada {name}
 enregistra (el|es) text (si us plau|sisplau)
 enregistra (el|es) text anomenat {name} si us plau
 enregistra (el|es) text ara si us plau
-enregistra (el|es) text ara, (si us plau|sisplau), (amb nom|anomenat) {name}
+enregistra (el|es) text ara (si us plau|sisplau) (amb nom|anomenat) {name}
 enregistra (el|es) text com a {name} ara si us plau
-enregistra (el|es) text, si us plau, anomenat {name}
+enregistra (el|es) text si us plau anomenat {name}
 grava (el|es) text anomenat {name}
 grava (el|es) text ara anomenat {name}
 grava (el|es) text com a {name}
@@ -99,7 +99,7 @@ inicia (la|sa) generació de contingut textual
 inicia (la|sa) presa de notes
 inicia (la|sa) presa de notes anomenada {name} si us plau
 inicia (la|sa) presa de notes ara
-inicia (la|sa) presa de notes, si us plau, amb nom {name}
+inicia (la|sa) presa de notes si us plau amb nom {name}
 inicia (la|sa) transcripció
 inicia (la|sa) transcripció com a {name}
 inicia la captura de text anomenada {name}
@@ -109,20 +109,20 @@ inicia la gravació (de|del|des) text com a {name}
 inicia la presa de notes
 inicia la presa de notes anomenada {name}
 inicia la presa de notes ara anomenada {name}
-inicia la presa de notes ara si us plau, amb nom {name}
+inicia la presa de notes ara si us plau amb nom {name}
 inicia la presa de notes com a {name}
 inicia un dictat anomenat {name}
 iniciem (el|es) dictat anomenat {name}
 inicieu (la|sa) presa de notes ara si us plau
-inicieu (la|sa) presa de notes, si us plau
-podem començar (el|es) dictat(?|)
-podem començar a (desar|guardar) a text(?|)
+inicieu (la|sa) presa de notes si us plau
+podem començar (el|es) dictat
+podem començar a (desar|guardar) a text
 podem començar un dictat anomenat {name}
-pots activar (el|es) mode de dictat(?|)
-pots activar (la|sa) transcripció de text(?|)
+pots activar (el|es) mode de dictat
+pots activar (la|sa) transcripció de text
 pots començar (el|es) dictat anomenat {name}
-pots començar (el|es) dictat(?|)
+pots començar (el|es) dictat
 pots començar a (desar|guardar) a text
-pots iniciar (el|es) desament a text(?|)
-pots iniciar (el|es) dictat(?|)
+pots iniciar (el|es) desament a text
+pots iniciar (el|es) dictat
 pots iniciar un dictat anomenat {name}

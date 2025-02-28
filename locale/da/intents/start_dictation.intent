@@ -22,8 +22,8 @@ begynd at tage noter
 begynd at tage noter med navnet {name}
 begynd at tage noter med navnet {navn}
 begynd at tage noter nu med navnet {name}
-begynd at tage noter nu, kald venligst {name}
-begynd at tage noter, kald venligst {name}
+begynd at tage noter nu kald venligst {name}
+begynd at tage noter kald venligst {name}
 begynd at transskribere som {name}
 begynd diktat
 begynd diktat med navn {name}
@@ -89,14 +89,14 @@ optag tekst som {name}
 optag tekst som {name} nu
 optag tekst som {name} nu tak
 optag tekst venligst navngivet {name}
-optag tekst, der nu hedder {name}
+optag tekst der nu hedder {name}
 optag venligst tekst
 optag venligst tekst med navnet {name}
 påbegynd diktat med navn {name}
 påbegynd diktat med navnet {name}
 påbegynd med at tage diktat
 påbegynd med at tage diktat med navnet {name}
-påbegynd notetagning nu, kald venligst {name}
+påbegynd notetagning nu kald venligst {name}
 påbegynd notetagning venligst navngivet {name}
 påbegynd tekstoptagelse
 påbegynd tekstoptagelse med navnet {name}
