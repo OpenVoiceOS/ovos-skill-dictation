@@ -72,8 +72,8 @@ comença la captura de text anomenada {name}
 comença la transcripció de text anomenada {name}
 enregistra (el|es) text (si us plau|sisplau)
 enregistra (el|es) text anomenat {name} si us plau
-enregistra (el|es) text ara si us plau
 enregistra (el|es) text ara (si us plau|sisplau) (amb nom|anomenat) {name}
+enregistra (el|es) text ara si us plau
 enregistra (el|es) text com a {name} ara si us plau
 enregistra (el|es) text si us plau anomenat {name}
 grava (el|es) text anomenat {name}
@@ -120,8 +120,8 @@ podem començar a (desar|guardar) a text
 podem començar un dictat anomenat {name}
 pots activar (el|es) mode de dictat
 pots activar (la|sa) transcripció de text
-pots començar (el|es) dictat anomenat {name}
 pots començar (el|es) dictat
+pots començar (el|es) dictat anomenat {name}
 pots començar a (desar|guardar) a text
 pots iniciar (el|es) desament a text
 pots iniciar (el|es) dictat

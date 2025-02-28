@@ -18,16 +18,16 @@ gaitu testu-transkripzioa
 gaitu testu-transkripzioa {name} izenarekin
 gaitu transkripzioaren funtzioa
 grabatu testua
+grabatu testua mesedez
 grabatu testua orain
 grabatu testua orain mesedez
 grabatu testua {name} gisa
 grabatu testua {name} gisa orain
 grabatu testua {name} gisa orain mesedez
-grabatu testua mesedez
 grabatu {name} izeneko testua
+grabatu {name} izeneko testua mesedez
 grabatu {name} izeneko testua orain
 grabatu {name} izeneko testua orain mesedez
-grabatu {name} izeneko testua mesedez
 has al dezakegu diktaketa
 has al dezakegu {name} izeneko diktaketa
 has al dezakezu diktaketa
@@ -53,9 +53,9 @@ hasi ohar-konpilazioa
 hasi oharrak egiten
 hasi oharrak grabatzen
 hasi oharrak hartzen
+hasi oharrak hartzen mesedez
 hasi oharrak hartzen {name} gisa
 hasi oharrak hartzen {name} izenarekin
-hasi oharrak hartzen mesedez
 hasi orain oharrak hartzen
 hasi orain oharrak hartzen mesedez
 hasi orain {name} izeneko oharrak hartzen

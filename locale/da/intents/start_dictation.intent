@@ -19,11 +19,11 @@ begynd at oprette tekstudskrift
 begynd at optage tekst
 begynd at optage tekst som {name}
 begynd at tage noter
+begynd at tage noter kald venligst {name}
 begynd at tage noter med navnet {name}
 begynd at tage noter med navnet {navn}
-begynd at tage noter nu med navnet {name}
 begynd at tage noter nu kald venligst {name}
-begynd at tage noter kald venligst {name}
+begynd at tage noter nu med navnet {name}
 begynd at transskribere som {name}
 begynd diktat
 begynd diktat med navn {name}
@@ -81,6 +81,7 @@ lad os indlede diktering
 lad os starte diktat med navnet {name}
 lad os starte diktering med navnet {name}
 optag tekst
+optag tekst der nu hedder {name}
 optag tekst med navnet {name}
 optag tekst nu
 optag tekst nu tak
@@ -89,7 +90,6 @@ optag tekst som {name}
 optag tekst som {name} nu
 optag tekst som {name} nu tak
 optag tekst venligst navngivet {name}
-optag tekst der nu hedder {name}
 optag venligst tekst
 optag venligst tekst med navnet {name}
 påbegynd diktat med navn {name}
