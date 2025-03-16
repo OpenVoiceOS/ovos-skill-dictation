@@ -1,20 +1,16 @@
 # Changelog
 
-## [0.2.13a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.13a2) (2025-02-28)
+## [0.2.14a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.14a1) (2025-03-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.13a1...0.2.13a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.13...0.2.14a1)
 
 **Merged pull requests:**
 
-- Translations update [\#39](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/39) ([JarbasAl](https://github.com/JarbasAl))
+- updating German translation [\#41](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/41) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
-## [0.2.13a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.13a1) (2025-02-27)
+## [V0.2.13](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.13) (2025-02-28)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.12...0.2.13a1)
-
-## [V0.2.12](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.12) (2025-01-27)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.12...V0.2.12)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.13...V0.2.13)
 
 
 
