@@ -1,9 +1,9 @@
 {
-    "/intents/StopKeyword.voc": [
-        "deter",
-        "desactivar",
-        "desconectado",
-        "sen conexión",
-        "parar"
-    ]
+  "/intents/StopKeyword.voc": [
+    "deter",
+    "desactivar",
+    "desconectado",
+    "parar",
+    "sen conexión"
+  ]
 }
