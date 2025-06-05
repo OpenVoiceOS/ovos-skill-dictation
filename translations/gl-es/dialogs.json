@@ -1,19 +1,19 @@
 {
-    "/dialogs/already_dictating.dialog": [
-        "O ditado xa está activado"
-    ],
-    "/dialogs/dictation.dialog": [
-        "Lendo o último ditado",
-        "O último ditado foi"
-    ],
-    "/dialogs/stop.dialog": [
-        "o ditado parou"
-    ],
-    "/dialogs/start.dialog": [
-        "comezou o ditado",
-        "vale. estou listo para o ditado"
-    ],
-    "/dialogs/not_dictating.dialog": [
-        "Non estou a ditar neste momento"
-    ]
+  "/dialogs/already_dictating.dialog": [
+    "O ditado xa está activado"
+  ],
+  "/dialogs/dictation.dialog": [
+    "O último ditado foi",
+    "Lendo o último ditado"
+  ],
+  "/dialogs/stop.dialog": [
+    "o ditado parou"
+  ],
+  "/dialogs/start.dialog": [
+    "comezou o ditado",
+    "vale. estou listo para o ditado"
+  ],
+  "/dialogs/not_dictating.dialog": [
+    "Non estou a ditar neste momento"
+  ]
 }
