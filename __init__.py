@@ -74,7 +74,9 @@ class DictationSkill(ConversationalSkill):
         name = self.dictation_sessions[sess.session_id]["file_name"] or time.time()
         with open(f"{path}/{name}.txt", "w") as f:
             f.write("\n".join(self.dictation_sessions[sess.session_id]["dictation_stack"]))
-        self.gui.show_text(f"saved to {path}/{name}.txt")
+
+        if sess.session_id == "default":
+            self.gui.show_text(f"saved to {path}/{name}.txt")
 
         self.dictation_sessions[sess.session_id]["dictating"] = False
 
@@ -123,5 +125,6 @@ class DictationSkill(ConversationalSkill):
         if self.voc_match(utterance, "StopKeyword"):
             self.handle_stop_dictation_intent(message)
         else:
-            self.gui.show_text(utterance)
+            if sess.session_id == "default":
+                self.gui.show_text(utterance)
             self.dictation_sessions[sess.session_id]["dictation_stack"].append(utterance)
