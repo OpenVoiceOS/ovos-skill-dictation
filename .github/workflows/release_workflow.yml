@@ -21,6 +21,10 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install Tools
+        run: |
+          python -m pip install ovos-utils
+
       - name: Sync translations by gitlocalize-app[bot]
         run: |
           python scripts/sync_translations.py
