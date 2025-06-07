@@ -2,14 +2,15 @@ import os.path
 import time
 
 from ovos_bus_client.message import Message
+from ovos_bus_client.session import SessionManager, Session
 from ovos_config import Configuration
 from ovos_utils import classproperty
 from ovos_utils.process_utils import RuntimeRequirements
 from ovos_workshop.decorators import intent_handler, adds_context, removes_context
-from ovos_workshop.skills import OVOSSkill
+from ovos_workshop.skills.converse import ConversationalSkill
 
 
-class DictationSkill(OVOSSkill):
+class DictationSkill(ConversationalSkill):
     """
     - start dictation
       - enable continuous conversation mode
@@ -37,9 +38,7 @@ class DictationSkill(OVOSSkill):
         )
 
     def initialize(self):
-        self.file_name = None
-        self.dictating = False
-        self.dictation_stack = []
+        self.dictation_sessions = {}
 
     @property
     def default_listen_mode(self):
@@ -54,24 +53,30 @@ class DictationSkill(OVOSSkill):
     @adds_context("DictationKeyword", "dictation")
     def start_dictation(self, message=None):
         message = message or Message("")
-        self.dictation_stack = []
-        self.dictating = True
-        self.file_name = message.data.get("name", str(time.time()))
+        sess = SessionManager.get(message)
+        self.dictation_sessions[sess.session_id] = dict(
+            file_name=message.data.get("name", str(time.time())),
+            dictating=True,
+            dictation_stack=[]
+        )
         self.bus.emit(message.forward("recognizer_loop:state.set",
                                       {"mode": "continuous"}))
 
     @removes_context("DictationKeyword")
     def stop_dictation(self, message=None):
         message = message or Message("")
-        self.dictating = False
+        sess = SessionManager.get(message)
         self.bus.emit(message.forward("recognizer_loop:state.set",
                                       {"mode": self.default_listen_mode}))
+
         path = f"{os.path.expanduser('~')}/Documents/dictations"
         os.makedirs(path, exist_ok=True)
-        name = self.file_name or time.time()
+        name = self.dictation_sessions[sess.session_id]["file_name"] or time.time()
         with open(f"{path}/{name}.txt", "w") as f:
-            f.write("\n".join(self.dictation_stack))
+            f.write("\n".join(self.dictation_sessions[sess.session_id]["dictation_stack"]))
         self.gui.show_text(f"saved to {path}/{name}.txt")
+
+        self.dictation_sessions[sess.session_id]["dictating"] = False
 
     @intent_handler("start_dictation.intent")
     def handle_start_dictation_intent(self, message):
@@ -79,7 +84,7 @@ class DictationSkill(OVOSSkill):
             self.speak_dialog("start", wait=True)
         else:
             self.speak_dialog("already_dictating", wait=True)
-        self.start_dictation()  # enable continuous listening, no wake word needed
+        self.start_dictation(message)  # enable continuous listening, no wake word needed
 
     @intent_handler("stop_dictation.intent")
     def handle_stop_dictation_intent(self, message):
@@ -87,21 +92,49 @@ class DictationSkill(OVOSSkill):
             self.speak_dialog("stop")
         else:
             self.speak_dialog("not_dictating")
-        self.stop_dictation()
+        self.stop_dictation(message)
 
-    def stop(self):
-        if self.dictating:
+    def stop_session(self, session: Session):
+        if session.session_id in self.dictation_sessions and \
+                self.dictation_sessions[session.session_id]["dictating"]:
+            self.dictation_sessions[session.session_id]["dictating"] = False
             self.stop_dictation()
             return True
+        return False
+
+    def stop(self):
+        sess = SessionManager.get()
+        if sess.session_id in self.dictation_sessions and \
+                self.dictation_sessions[sess.session_id]["dictating"]:
+            self.stop_session(sess)
+            return True
+        return False
+
+    def can_answer(self, message: Message) -> bool:
+        """
+        Determines if the skill can handle the given utterances in the specified language in the converse method.
+
+        Override this method to implement custom logic for assessing whether the skill is capable of answering a query.
+
+        Returns:
+            True if the skill can handle the query during converse; otherwise, False.
+        """
+        sess = SessionManager.get(message)
+        if sess.session_id in self.dictation_sessions and \
+                self.dictation_sessions[sess.session_id]["dictating"]:
+            return True
+        return False
 
     def converse(self, message):
         utterance = message.data["utterances"][0]
-        if self.dictating:
+        sess = SessionManager.get(message)
+        if sess.session_id in self.dictation_sessions and \
+                self.dictation_sessions[sess.session_id]["dictating"]:
             if self.voc_match(utterance, "StopKeyword"):
                 self.handle_stop_dictation_intent(message)
             else:
                 self.gui.show_text(utterance)
-                self.dictation_stack.append(utterance)
+                self.dictation_sessions[sess.session_id]["dictation_stack"].append(utterance)
             return True
         return False
 
