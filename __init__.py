@@ -108,7 +108,7 @@ class DictationSkill(ConversationalSkill):
             return True
         return False
 
-    def can_answer(self, message: Message) -> bool:
+    def can_converse(self, message: Message) -> bool:
         """
         Determines if the skill can handle the given utterances in the specified language in the converse method.
 
