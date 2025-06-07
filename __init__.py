@@ -94,19 +94,15 @@ class DictationSkill(ConversationalSkill):
             self.speak_dialog("not_dictating")
         self.stop_dictation(message)
 
+    def can_stop(self, message: Message) -> bool:
+        session = SessionManager.get(message)
+        return session.session_id in self.dictation_sessions and self.dictation_sessions[session.session_id]["dictating"]
+
     def stop_session(self, session: Session):
         if session.session_id in self.dictation_sessions and \
                 self.dictation_sessions[session.session_id]["dictating"]:
             self.dictation_sessions[session.session_id]["dictating"] = False
             self.stop_dictation()
-            return True
-        return False
-
-    def stop(self):
-        sess = SessionManager.get()
-        if sess.session_id in self.dictation_sessions and \
-                self.dictation_sessions[sess.session_id]["dictating"]:
-            self.stop_session(sess)
             return True
         return False
 
@@ -119,47 +115,13 @@ class DictationSkill(ConversationalSkill):
         Returns:
             True if the skill can handle the query during converse; otherwise, False.
         """
-        sess = SessionManager.get(message)
-        if sess.session_id in self.dictation_sessions and \
-                self.dictation_sessions[sess.session_id]["dictating"]:
-            return True
-        return False
+        return self.can_stop(message) # same logic
 
     def converse(self, message):
         utterance = message.data["utterances"][0]
         sess = SessionManager.get(message)
-        if sess.session_id in self.dictation_sessions and \
-                self.dictation_sessions[sess.session_id]["dictating"]:
-            if self.voc_match(utterance, "StopKeyword"):
-                self.handle_stop_dictation_intent(message)
-            else:
-                self.gui.show_text(utterance)
-                self.dictation_sessions[sess.session_id]["dictation_stack"].append(utterance)
-            return True
-        return False
-
-
-if __name__ == "__main__":
-    from ovos_utils.fakebus import FakeBus
-
-
-    # print speak for debugging
-    def spk(utt, *args, **kwargs):
-        print(utt)
-
-
-    s = DictationSkill(skill_id="fake.test", bus=FakeBus())
-    s.speak = spk
-
-    s.handle_stop_dictation_intent(Message(""))
-    # I am not dictating at this moment
-    s.handle_start_dictation_intent(Message(""))
-    # ok, i am ready for dictation
-    s.converse(Message("", {"utterances": ["test"]}))
-    s.converse(Message("", {"utterances": ["test"]}))
-    s.converse(Message("", {"utterances": ["test"]}))
-    s.converse(Message("", {"utterances": ["stop"]}))
-    # dictation stopped
-    s.converse(Message("", {"utterances": ["test"]}))
-
-    assert s.dictation_stack == ['test', 'test', 'test']
+        if self.voc_match(utterance, "StopKeyword"):
+            self.handle_stop_dictation_intent(message)
+        else:
+            self.gui.show_text(utterance)
+            self.dictation_sessions[sess.session_id]["dictation_stack"].append(utterance)
