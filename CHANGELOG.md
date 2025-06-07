@@ -1,16 +1,16 @@
 # Changelog
 
-## [0.2.18a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.18a1) (2025-06-07)
+## [0.2.19a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.19a1) (2025-06-07)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.17...0.2.18a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.18...0.2.19a1)
 
 **Merged pull requests:**
 
-- fix: workshop 6.0.0 compat [\#51](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/51) ([JarbasAl](https://github.com/JarbasAl))
+- fix:workshop 7.0.0 compat [\#53](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/53) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.2.17](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.17) (2025-06-07)
+## [V0.2.18](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.18) (2025-06-07)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.17...V0.2.17)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.18...V0.2.18)
 
 
 
