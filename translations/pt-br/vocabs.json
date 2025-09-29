@@ -1,0 +1,9 @@
+{
+  "/intents/StopKeyword.voc": [
+    "pare",
+    "desabilite",
+    "desligue",
+    "aborte",
+    "desconecte"
+  ]
+}
