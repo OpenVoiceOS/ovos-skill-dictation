@@ -1,0 +1,19 @@
+{
+  "/dialogs/already_dictating.dialog": [
+    "El dictado ya está habilitado"
+  ],
+  "/dialogs/dictation.dialog": [
+    "El último dictado fue",
+    "Leyendo el último dictado"
+  ],
+  "/dialogs/stop.dialog": [
+    "Dictado detenido"
+  ],
+  "/dialogs/start.dialog": [
+    "El dictado ha empezado",
+    "Vale, estoy listo para el dictado"
+  ],
+  "/dialogs/not_dictating.dialog": [
+    "No estoy dictando en este momento"
+  ]
+}
