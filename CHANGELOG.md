@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.20a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a2) (2025-11-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a1...0.2.20a2)
+
+**Merged pull requests:**
+
+- es-es/translate [\#57](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/57) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
 ## [0.2.20a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a1) (2025-09-29)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.19...0.2.20a1)
