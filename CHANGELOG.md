@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.20a4](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a4) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a3...0.2.20a4)
+
+**Merged pull requests:**
+
+- Configure Renovate [\#61](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.2.20a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a3) (2025-11-20)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a2...0.2.20a3)
