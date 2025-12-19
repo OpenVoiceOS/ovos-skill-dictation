@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.20a6](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a6) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a5...0.2.20a6)
+
+**Merged pull requests:**
+
+- Update stefanzweifel/git-auto-commit-action action to v7 [\#68](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/68) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.2.20a5](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a5) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a4...0.2.20a5)
