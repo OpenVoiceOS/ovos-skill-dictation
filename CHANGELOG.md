@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.20a7](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a7) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a6...0.2.20a7)
+
+**Merged pull requests:**
+
+- Update dependency ovos-workshop to v8 [\#67](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.2.20a6](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a6) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a5...0.2.20a6)
@@ -42,15 +50,11 @@
 
 ## [0.2.20a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a1) (2025-09-29)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.19...0.2.20a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.19...0.2.20a1)
 
 **Merged pull requests:**
 
 - Add pt-BR [\#55](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/55) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [V0.2.19](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.19) (2025-06-07)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.19...V0.2.19)
 
 
 
