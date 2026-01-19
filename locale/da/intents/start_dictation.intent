@@ -18,12 +18,18 @@ begynd at konvertere tale til tekst
 begynd at oprette tekstudskrift
 begynd at optage tekst
 begynd at optage tekst som {name}
+begynd at skrive fra stemmen
+begynd at skrive tekst
+begynd at skrive tekst som {name}
 begynd at tage noter
 begynd at tage noter kald venligst {name}
 begynd at tage noter med navnet {name}
 begynd at tage noter med navnet {navn}
 begynd at tage noter nu kald venligst {name}
 begynd at tage noter nu med navnet {name}
+begynd at tage tekstnoter
+begynd at transskribere
+begynd at transskribere lyd som {name}
 begynd at transskribere som {name}
 begynd diktat
 begynd diktat med navn {name}
