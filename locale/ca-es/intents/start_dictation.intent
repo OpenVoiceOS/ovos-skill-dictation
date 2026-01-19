@@ -63,14 +63,17 @@ comença a convertir la veu en text
 comença a convertir sa veu en text
 comença a desar a text
 comença a desar com a text
+comença a desar en text
 comença a desar les paraules parlades
 comença a desar ses paraules parlades
 comença a enregistrar el text
 comença a enregistrar es text
 comença a enregistrar informació verbal
+comença a enregistrar la informació verbal
 comença a escriure des de la veu
 comença a escriure des de sa veu
 comença a escriure des de veu
+comença a escriure per veu
 comença a escriure text
 comença a escriure text com a {name}
 comença a fer dictats
@@ -85,6 +88,8 @@ comença a guardar a text
 comença a guardar com a text
 comença a guardar les paraules parlades
 comença a guardar ses paraules parlades
+comença a prendre dictat
+comença a prendre el dictat anomenat {name}
 comença a prendre notes
 comença a prendre notes amb el nom de {name}
 comença a prendre notes amb el nom de {name} si us plau
