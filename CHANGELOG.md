@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.20a10](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a10) (2026-02-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a9...0.2.20a10)
+
+**Merged pull requests:**
+
+- Update actions/setup-python action to v6 [\#66](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v6 [\#64](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/64) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.2.20a9](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a9) (2026-01-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a8...0.2.20a9)
+
 ## [0.2.20a8](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a8) (2026-01-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a7...0.2.20a8)
@@ -59,11 +72,15 @@
 
 ## [0.2.20a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a1) (2025-09-29)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.19...0.2.20a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.19...0.2.20a1)
 
 **Merged pull requests:**
 
 - Add pt-BR [\#55](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/55) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [V0.2.19](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.19) (2025-06-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.19...V0.2.19)
 
 
 
