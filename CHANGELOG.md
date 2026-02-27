@@ -1,8 +1,20 @@
 # Changelog
 
+## [0.2.21a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.21a1) (2026-02-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a10...0.2.21a1)
+
+**Merged pull requests:**
+
+- fix: is\_dictating [\#71](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/71) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.20a10](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a10) (2026-02-03)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a9...0.2.20a10)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a11...0.2.20a10)
+
+## [0.2.20a11](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a11) (2026-02-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a9...0.2.20a11)
 
 **Merged pull requests:**
 
