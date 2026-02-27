@@ -1,98 +1,12 @@
 # Changelog
 
-## [0.2.21a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.21a1) (2026-02-27)
+## [V0.2.21](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.21) (2026-02-27)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a10...0.2.21a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.21...V0.2.21)
 
-**Merged pull requests:**
+**Closed issues:**
 
-- fix: is\_dictating [\#71](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/71) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.2.20a10](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a10) (2026-02-03)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a11...0.2.20a10)
-
-## [0.2.20a11](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a11) (2026-02-03)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a9...0.2.20a11)
-
-**Merged pull requests:**
-
-- Update actions/setup-python action to v6 [\#66](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
-- Update actions/checkout action to v6 [\#64](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/64) ([renovate[bot]](https://github.com/apps/renovate))
-
-## [0.2.20a9](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a9) (2026-01-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a8...0.2.20a9)
-
-## [0.2.20a8](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a8) (2026-01-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a7...0.2.20a8)
-
-**Merged pull requests:**
-
-- da-dk/translate [\#70](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/70) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- ca-es/translate [\#69](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/69) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [0.2.20a7](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a7) (2025-12-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a6...0.2.20a7)
-
-**Merged pull requests:**
-
-- Update dependency ovos-workshop to v8 [\#67](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
-
-## [0.2.20a6](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a6) (2025-12-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a5...0.2.20a6)
-
-**Merged pull requests:**
-
-- Update stefanzweifel/git-auto-commit-action action to v7 [\#68](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/68) ([renovate[bot]](https://github.com/apps/renovate))
-
-## [0.2.20a5](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a5) (2025-12-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a4...0.2.20a5)
-
-**Merged pull requests:**
-
-- Update dependency python to 3.14 [\#63](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/63) ([renovate[bot]](https://github.com/apps/renovate))
-
-## [0.2.20a4](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a4) (2025-12-18)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a3...0.2.20a4)
-
-**Merged pull requests:**
-
-- Configure Renovate [\#61](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
-
-## [0.2.20a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a3) (2025-11-20)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a2...0.2.20a3)
-
-**Merged pull requests:**
-
-- es-es/translate [\#59](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/59) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [0.2.20a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a2) (2025-11-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.20a1...0.2.20a2)
-
-**Merged pull requests:**
-
-- es-es/translate [\#57](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/57) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [0.2.20a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.20a1) (2025-09-29)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.19...0.2.20a1)
-
-**Merged pull requests:**
-
-- Add pt-BR [\#55](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/55) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [V0.2.19](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.19) (2025-06-07)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.19...V0.2.19)
+- \[FEATURE\] Release on PyPi [\#3](https://github.com/OpenVoiceOS/ovos-skill-dictation/issues/3)
 
 
 
