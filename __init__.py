@@ -50,6 +50,11 @@ class DictationSkill(ConversationalSkill):
         else:
             return "wakeword"
 
+    def is_dictating(self, sess) -> bool:
+        if sess.session_id in self.dictation_sessions:
+            return self.dictation_sessions[sess.session_id].get("dictating", False)
+        return False
+        
     @adds_context("DictationKeyword", "dictation")
     def start_dictation(self, message=None):
         message = message or Message("")
@@ -82,7 +87,8 @@ class DictationSkill(ConversationalSkill):
 
     @intent_handler("start_dictation.intent")
     def handle_start_dictation_intent(self, message):
-        if not self.dictating:
+        sess = SessionManager.get(message)
+        if not self.is_dictating(sess):
             self.speak_dialog("start", wait=True)
         else:
             self.speak_dialog("already_dictating", wait=True)
@@ -90,7 +96,8 @@ class DictationSkill(ConversationalSkill):
 
     @intent_handler("stop_dictation.intent")
     def handle_stop_dictation_intent(self, message):
-        if self.dictating:
+        sess = SessionManager.get(message)
+        if not self.is_dictating(sess):
             self.speak_dialog("stop")
         else:
             self.speak_dialog("not_dictating")
