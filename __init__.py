@@ -42,6 +42,14 @@ class DictationSkill(ConversationalSkill):
 
     @property
     def default_listen_mode(self):
+        """
+        Determine the default listener mode from the configuration.
+        
+        Selects 'continuous' when the listener's `continuous_listen` setting is true, otherwise selects 'hybrid' when `hybrid_listen` is true, and falls back to 'wakeword' if neither is enabled.
+        
+        Returns:
+            str: One of 'continuous', 'hybrid', or 'wakeword' indicating the default listening mode.
+        """
         listener_config = Configuration().get("listener", {})
         if listener_config.get("continuous_listen", False):
             return "continuous"
@@ -51,12 +59,34 @@ class DictationSkill(ConversationalSkill):
             return "wakeword"
 
     def is_dictating(self, sess) -> bool:
+        """
+        Check whether dictation is active for the given session.
+        
+        Parameters:
+        	sess: The session object whose dictation state should be checked.
+        
+        Returns:
+        	True if the session currently has an active dictation, False otherwise.
+        """
         if sess.session_id in self.dictation_sessions:
             return self.dictation_sessions[sess.session_id].get("dictating", False)
         return False
         
     @adds_context("DictationKeyword", "dictation")
     def start_dictation(self, message=None):
+        """
+        Begin a dictation session for the current conversation session.
+        
+        Creates or updates an entry in self.dictation_sessions for the session returned by SessionManager.get(message) with:
+        - file_name taken from message.data["name"] if present, otherwise the current timestamp,
+        - dictating set to True,
+        - an empty dictation_stack.
+        
+        Also emits a bus message to set the recognizer loop mode to "continuous".
+        
+        Parameters:
+            message (Message, optional): Incoming message whose .data may contain a "name" key to use as the dictation file name. If omitted, a default Message is used.
+        """
         message = message or Message("")
         sess = SessionManager.get(message)
         self.dictation_sessions[sess.session_id] = dict(
@@ -87,6 +117,14 @@ class DictationSkill(ConversationalSkill):
 
     @intent_handler("start_dictation.intent")
     def handle_start_dictation_intent(self, message):
+        """
+        Handle the user intent to begin dictation for the current session.
+        
+        Speaks a confirmation dialog ("start") if dictation is not already active for the session, or an "already_dictating" dialog if it is, then enables dictation listening for the session.
+        
+        Parameters:
+            message: Bus message containing the intent payload and session information.
+        """
         sess = SessionManager.get(message)
         if not self.is_dictating(sess):
             self.speak_dialog("start", wait=True)
@@ -96,6 +134,14 @@ class DictationSkill(ConversationalSkill):
 
     @intent_handler("stop_dictation.intent")
     def handle_stop_dictation_intent(self, message):
+        """
+        Handle a stop-dictation intent by notifying the user and stopping any active dictation.
+        
+        If there is no active dictation for the session, speaks the "stop" dialog; otherwise speaks "not_dictating". Always invokes stop_dictation to ensure dictation is terminated and saved as appropriate.
+        
+        Parameters:
+            message: The incoming intent message containing session and intent data.
+        """
         sess = SessionManager.get(message)
         if not self.is_dictating(sess):
             self.speak_dialog("stop")
