@@ -1,0 +1,13 @@
+{
+  "skill_id": "ovos-skill-dictation.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-dictation",
+  "name": "Dictée",
+  "description": "Transcrit ce que vous dites tant que la dictée est active.",
+  "examples": [
+    "Démarre la dictée",
+    "Arrête la dictée"
+  ],
+  "tags": [
+    "productivité"
+  ]
+}
