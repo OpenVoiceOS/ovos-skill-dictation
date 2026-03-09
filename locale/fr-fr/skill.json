@@ -1,8 +1,8 @@
 {
   "skill_id": "ovos-skill-dictation.openvoiceos",
   "source": "https://github.com/OpenVoiceOS/ovos-skill-dictation",
-  "name": "Skill de dictée",
-  "description": "Transcrit en continu la parole de l'utilisateur dans un fichier texte tant que la dictée est activée.",
+  "name": "Dictée",
+  "description": "Transcrit ce que vous dites tant que la dictée est active.",
   "examples": [
     "Démarre la dictée",
     "Arrête la dictée"
