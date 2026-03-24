@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.23a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.23a1) (2026-03-24)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.21...0.2.23a1)
+
+**Merged pull requests:**
+
+- fix: rename bare lang code locale directories [\#77](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/77) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- Add French dictation locale [\#76](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/76) ([goldyfruit](https://github.com/goldyfruit))
+
 ## [V0.2.21](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.21) (2026-02-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.21...V0.2.21)
