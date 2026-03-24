@@ -1,0 +1,88 @@
+aktibatu ahotsetik testurako grabaketa {name} gisa
+aktibatu diktaketa
+aktibatu diktaketa {name} izenarekin
+aktibatu testu-hautematea
+aktibatu testu-transkripzio modua {name} izenarekin
+aktibatu testu-transkripzioa
+aktibatu testu-transkripzioa {name} izenarekin
+aktibatu testua hautemateko modua
+gaitu ahotsetik testura modua
+gaitu al dezakezu diktaketa-modua
+gaitu al dezakezu testu-transkripzioa
+gaitu dezagun diktaketa modua
+gaitu dezagun testu-transkripzioa
+gaitu diktaketa modua
+gaitu diktaketa modua honetarako {name}
+gaitu diktaketa {name} izenarekin
+gaitu testu-transkripzioa
+gaitu testu-transkripzioa {name} izenarekin
+gaitu transkripzioaren funtzioa
+grabatu testua
+grabatu testua mesedez
+grabatu testua orain
+grabatu testua orain mesedez
+grabatu testua {name} gisa
+grabatu testua {name} gisa orain
+grabatu testua {name} gisa orain mesedez
+grabatu {name} izeneko testua
+grabatu {name} izeneko testua mesedez
+grabatu {name} izeneko testua orain
+grabatu {name} izeneko testua orain mesedez
+has al dezakegu diktaketa
+has al dezakegu {name} izeneko diktaketa
+has al dezakezu diktaketa
+has al dezakezu {name} izeneko diktaketa
+has al gaitezke testua gordetzen
+has al zaitezke testua gordetzen
+has dezagun diktaketa
+has dezagun {name} izeneko diktaketa
+has gaitezen testua gordetzen
+hasi ahotsa testu bihurtzen
+hasi ahotsa testu bihurtzen {name} gisa
+hasi ahotsetik testura grabatzen
+hasi ahotsetik testurako bihurketa
+hasi ahozko informazioa grabatzen
+hasi audioa transkribatzen {name} gisa
+hasi diktaketa
+hasi diktaketa hartzen
+hasi diktaketa {name} izenarekin
+hasi esandako hitzak gordetzen
+hasi hitzak grabatzen {name} gisa
+hasi idazten ahotsetik
+hasi ohar-konpilazioa
+hasi oharrak egiten
+hasi oharrak grabatzen
+hasi oharrak hartzen
+hasi oharrak hartzen mesedez
+hasi oharrak hartzen {name} gisa
+hasi oharrak hartzen {name} izenarekin
+hasi orain oharrak hartzen
+hasi orain oharrak hartzen mesedez
+hasi orain {name} izeneko oharrak hartzen
+hasi testu-edukiak sortzen
+hasi testu-grabaketa
+hasi testu-grabaketa {name} gisa
+hasi testu-oharrak hartzen
+hasi testu-transkripzioa
+hasi testu-transkripzioa sortzen
+hasi testua diktatzen
+hasi testua gordetzen
+hasi testua grabatzen
+hasi testua grabatzen {name} gisa
+hasi testua hautematen
+hasi testua hautematen {name} gisa
+hasi testua hautematen {name} izenarekin
+hasi testua idazten
+hasi testua idazten {name} gisa
+hasi testua transkribatzeko prozesua
+hasi testua transkribatzen
+hasi testuaren dokumentazioa
+hasi transkribatzen
+hasi transkribatzen {name} gisa
+hasi {name} izeneko diktaketa
+hasi {name} izeneko diktaketa hartzen
+hasi {name} izeneko ohar-konpilazioa
+hasi {name} izeneko oharrak hartzen
+hasi {name} izeneko oharrak hartzen mesedez
+hasi {name} izeneko testu-transkripzioa
+hasi {name} izeneko testua hautematen
