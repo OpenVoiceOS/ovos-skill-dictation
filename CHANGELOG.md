@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.23a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.23a2) (2026-03-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.23a1...0.2.23a2)
+
+**Merged pull requests:**
+
+- translate\(it-IT\): update not\_dictating.dialog [\#81](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/81) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(it-IT\): update dictation.dialog [\#80](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/80) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(it-IT\): update already\_dictating.dialog [\#79](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/79) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+
 ## [0.2.23a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.23a1) (2026-03-24)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/V0.2.21...0.2.23a1)
