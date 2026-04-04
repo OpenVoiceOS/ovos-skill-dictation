@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.23a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.23a3) (2026-04-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.23a2...0.2.23a3)
+
+**Merged pull requests:**
+
+- ci: modernize GitHub workflows [\#87](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/87) ([JarbasAl](https://github.com/JarbasAl))
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#86](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/86) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.23a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.23a2) (2026-03-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.23a1...0.2.23a2)
@@ -22,10 +31,6 @@
 ## [V0.2.21](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/V0.2.21) (2026-02-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.21...V0.2.21)
-
-**Closed issues:**
-
-- \[FEATURE\] Release on PyPi [\#3](https://github.com/OpenVoiceOS/ovos-skill-dictation/issues/3)
 
 
 
