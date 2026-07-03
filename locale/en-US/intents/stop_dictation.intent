@@ -1,60 +1,6 @@
-can we end capturing text
-can we end dictation
-can we end note-taking
-can we end transcription
-can you cancel capturing text
-can you cancel dictation
-can you cancel note-taking
-can you cancel transcription
-can you deactivate dictation
-can you deactivate text transcription
-can you disable dictation mode
-can you disable text transcription
-can you stop capturing text
-can you stop dictation
-can you stop taking notes
-can you stop transcription
-can you terminate capturing text
-can you terminate dictation
-can you terminate note-taking
-can you terminate transcription
-cancel capturing text
-cancel dictation
-cancel note-taking
-cancel transcription
-deactivate dictation
-deactivate text transcription
-disable dictation mode
-disable text transcription
-end capturing text
-end dictation
-end note-taking
-end transcription
-let's cancel capturing text
-let's cancel dictation
-let's cancel note-taking
-let's cancel transcription
-let's deactivate dictation
-let's deactivate text transcription
-let's disable dictation mode
-let's disable text transcription
-let's end capturing text
-let's end dictation
-let's end note-taking
-let's end transcription
-let's stop capturing text
-let's stop dictation
-let's stop taking notes
-let's stop transcription
-let's terminate capturing text
-let's terminate dictation
-let's terminate note-taking
-let's terminate transcription
-stop capturing text
-stop dictation
-stop taking notes
-stop transcription
-terminate capturing text
-terminate dictation
-terminate note-taking
-terminate transcription
+# End the active dictation session and save the captured text.
+[(can you|can we|let's)] (stop|end|cancel|terminate|finish|complete) [taking] dictation
+[(can you|can we|let's)] (stop|end|cancel|terminate|finish|complete) (taking notes|note-taking)
+[(can you|can we|let's)] (stop|end|cancel|terminate|finish|complete) (capturing text|text capture)
+[(can you|can we|let's)] (stop|end|cancel|terminate|finish|complete) [text] transcription
+[(can you|can we|let's)] (deactivate|disable) [text] (dictation|transcription) [mode]
