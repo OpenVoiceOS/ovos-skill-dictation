@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.23a5](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.23a5) (2026-07-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.23a4...0.2.23a5)
+
+**Merged pull requests:**
+
+- chore: add ovoscope end2end intent-routing tests [\#91](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/91) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.23a4](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.23a4) (2026-04-09)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.23a3...0.2.23a4)
