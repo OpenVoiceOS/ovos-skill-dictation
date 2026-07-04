@@ -16,4 +16,3 @@ jobs:
       require_padatious: true
       system_deps: 'swig libfann-dev'
       test_path: 'test/end2end/'
-      require_padatious: true
