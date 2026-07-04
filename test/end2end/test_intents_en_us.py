@@ -17,7 +17,9 @@ SKILL_ID = "ovos-skill-dictation.openvoiceos"
 class TestDictationIntentsEnUS(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.minicroft = get_minicroft([SKILL_ID])
+        # the padatious models for the consolidated dictation intents take a
+        # while to train on CI runners, so allow a generous READY window
+        cls.minicroft = get_minicroft([SKILL_ID], max_wait=300)
 
     @classmethod
     def tearDownClass(cls):
