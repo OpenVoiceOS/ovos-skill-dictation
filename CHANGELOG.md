@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.24a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.24a1) (2026-07-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.23a5...0.2.24a1)
+
+**Merged pull requests:**
+
+- fix: allow ovos-workshop 9.x [\#94](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/94) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.23a5](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.23a5) (2026-07-03)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.23a4...0.2.23a5)
