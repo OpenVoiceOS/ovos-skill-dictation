@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.25a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.25a1) (2026-07-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.24a1...0.2.25a1)
+
+**Merged pull requests:**
+
+- fix\(en-US\): consolidate dictation intents and add name entity [\#92](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/92) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.24a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.24a1) (2026-07-12)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.23a5...0.2.24a1)
