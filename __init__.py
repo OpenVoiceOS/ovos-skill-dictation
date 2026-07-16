@@ -104,6 +104,10 @@ class DictationSkill(ConversationalSkill):
         self.bus.emit(message.forward("recognizer_loop:state.set",
                                       {"mode": self.default_listen_mode}))
 
+        if sess.session_id not in self.dictation_sessions:
+            # nothing was dictated for this session, restore the listener and bail
+            return
+
         path = f"{os.path.expanduser('~')}/Documents/dictations"
         os.makedirs(path, exist_ok=True)
         name = self.dictation_sessions[sess.session_id]["file_name"] or time.time()
@@ -175,7 +179,7 @@ class DictationSkill(ConversationalSkill):
     def converse(self, message):
         utterance = message.data["utterances"][0]
         sess = SessionManager.get(message)
-        if self.voc_match(utterance, "StopKeyword"):
+        if self.voc_match(utterance, "stop_keyword"):
             self.handle_stop_dictation_intent(message)
         else:
             if sess.session_id == "default":

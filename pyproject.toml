@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos-skill-dictation"
+dynamic = ["version"]
+description = "transcribe speech to a text note by voice"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "JarbasAi", email = "jarbasai@mailfence.com"}
+]
+keywords = ["ovos", "skill", "plugin"]
+dependencies = [
+    "ovos-workshop>=9.0.2a1,<10.0.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "ovoscope>=1.0.0a1,<2.0.0",
+    "ovos-bus-client>=2.2.0a1",
+    "ovos-core[plugins,lgpl]>=2.0.0a1",
+    "pytest>=5.2.4"
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenVoiceOS/ovos-skill-dictation"
+
+[project.entry-points."ovos.plugin.skill"]
+"ovos-skill-dictation.openvoiceos" = "ovos_skill_dictation:DictationSkill"
+
+[tool.setuptools]
+packages = ["ovos_skill_dictation"]
+
+[tool.setuptools.package-dir]
+ovos_skill_dictation = ""
+
+[tool.setuptools.dynamic]
+version = {attr = "ovos_skill_dictation.version.__version__"}
+
+[tool.setuptools.package-data]
+ovos_skill_dictation = [
+    "*.json",
+    "locale/**/*",
+    "locale/*/*.voc",
+    "locale/*/*.intent",
+    "locale/*/*.dialog",
+    "locale/*/*.entity",
+]
