@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.25a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.25a2) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.25a1...0.2.25a2)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#98](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/98) ([JarbasAl](https://github.com/JarbasAl))
+- fix\(da-DK\): add missing name.entity [\#97](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/97) ([andlo](https://github.com/andlo))
+
 ## [0.2.25a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.25a1) (2026-07-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.24a1...0.2.25a1)
