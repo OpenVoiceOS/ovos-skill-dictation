@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.25a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.25a3) (2026-08-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.25a2...0.2.25a3)
+
+**Merged pull requests:**
+
+- test: add golden-utterance end2end suite \(en-US\) [\#100](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/100) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.25a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.25a2) (2026-08-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.25a1...0.2.25a2)
