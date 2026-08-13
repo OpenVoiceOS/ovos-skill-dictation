@@ -141,16 +141,16 @@ class DictationSkill(ConversationalSkill):
         """
         Handle a stop-dictation intent by notifying the user and stopping any active dictation.
         
-        If there is no active dictation for the session, speaks the "stop" dialog; otherwise speaks "not_dictating". Always invokes stop_dictation to ensure dictation is terminated and saved as appropriate.
-        
+        If there is no active dictation for the session, speaks the "not_dictating" dialog; otherwise speaks "stop". Always invokes stop_dictation to ensure dictation is terminated and saved as appropriate.
+
         Parameters:
             message: The incoming intent message containing session and intent data.
         """
         sess = SessionManager.get(message)
         if not self.is_dictating(sess):
-            self.speak_dialog("stop")
-        else:
             self.speak_dialog("not_dictating")
+        else:
+            self.speak_dialog("stop")
         self.stop_dictation(message)
 
     def can_stop(self, message: Message) -> bool:
