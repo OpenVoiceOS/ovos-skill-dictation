@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.26a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.26a1) (2026-08-13)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.25a3...0.2.26a1)
+
+**Merged pull requests:**
+
+- fix: correct inverted stop-dialog in handle\_stop\_dictation\_intent [\#103](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/103) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.25a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.25a3) (2026-08-12)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.25a2...0.2.25a3)
