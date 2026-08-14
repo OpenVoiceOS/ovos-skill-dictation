@@ -13,14 +13,15 @@ authors = [
 ]
 keywords = ["ovos", "skill", "plugin"]
 dependencies = [
-    "ovos-workshop>=9.0.2a1,<10.0.0"
+    "ovos-workshop>=9.5.0a1,<10.0.0"
 ]
 
 [project.optional-dependencies]
 test = [
-    "ovoscope>=1.0.0a1,<2.0.0",
+    "ovoscope>=1.6.8a1,<2.0.0",
     "ovos-bus-client>=2.2.0a1",
     "ovos-core[plugins,lgpl]>=2.0.0a1",
+    "ovos-padatious>=2.0.4a1,<3.0.0",
     "pytest>=5.2.4"
 ]
 
