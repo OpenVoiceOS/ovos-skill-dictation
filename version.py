@@ -1,6 +1,12 @@
 # START_VERSION_BLOCK
 VERSION_MAJOR = 0
 VERSION_MINOR = 2
-VERSION_BUILD = 21
-VERSION_ALPHA = 0
+VERSION_BUILD = 26
+VERSION_ALPHA = 3
 # END_VERSION_BLOCK
+
+# derived for setuptools dynamic version (do not edit the block above)
+if int(VERSION_ALPHA):
+    __version__ = f"{VERSION_MAJOR}.{VERSION_MINOR}.{VERSION_BUILD}a{VERSION_ALPHA}"
+else:
+    __version__ = f"{VERSION_MAJOR}.{VERSION_MINOR}.{VERSION_BUILD}"

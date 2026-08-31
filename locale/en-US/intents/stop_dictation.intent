@@ -1,0 +1,6 @@
+# End the active dictation session and save the captured text.
+[(can you|can we|let's)] (stop|end|cancel|terminate|finish|complete) [taking] dictation
+[(can you|can we|let's)] (stop|end|cancel|terminate|finish|complete) (taking notes|note-taking)
+[(can you|can we|let's)] (stop|end|cancel|terminate|finish|complete) (capturing text|text capture)
+[(can you|can we|let's)] (stop|end|cancel|terminate|finish|complete) [text] transcription
+[(can you|can we|let's)] (deactivate|disable) [text] (dictation|transcription) [mode]
