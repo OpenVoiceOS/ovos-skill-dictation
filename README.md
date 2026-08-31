@@ -22,5 +22,9 @@ The skill captures utterances and disables wake words while dictation is active.
 * "start dictation"
 * "end dictation"
 
+## Entity hints
+
+The skill ships `locale/<lang>/intents/name.entity`, a list of example transcript titles ("shopping list", "meeting notes", "grocery list", ...) for the optional `{name}` slot in `start_dictation.intent`. These are hints, not a closed list: any title you say, including one not on the list, still fills the slot and is used as the saved file name; listed titles simply match with more confidence. `ovos-workshop` (>=9.5.0a1) registers every shipped `.entity` file automatically when the skill's language resources are loaded, so nothing needs to be configured for this.
+
 ## Credits
 JarbasAI
