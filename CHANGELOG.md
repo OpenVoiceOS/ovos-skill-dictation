@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.26a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.26a3) (2026-08-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.26a2...0.2.26a3)
+
+**Merged pull requests:**
+
+- docs: describe entity value hints [\#106](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/106) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.26a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.26a2) (2026-08-31)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.26a1...0.2.26a2)
