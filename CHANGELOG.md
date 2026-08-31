@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.26a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.26a2) (2026-08-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.26a1...0.2.26a2)
+
+**Merged pull requests:**
+
+- Register name.entity to constrain the {name} slot [\#102](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/102) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.26a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.26a1) (2026-08-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.25a3...0.2.26a1)
