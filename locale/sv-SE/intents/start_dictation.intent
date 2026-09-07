@@ -1,0 +1,16 @@
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) [med] diktering [läge]
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) [med] diktering [läge] (kallad|som|med namnet) {name}
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) (anteckna|göra anteckningar)
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) (anteckna|göra anteckningar) (kallad|som|med namnet) {name}
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) (textinsamling|fånga text) [läge]
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) (textinsamling|fånga text) [läge] (kallad|som|med namnet) {name}
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) [text] transkribering [läge]
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) [text] transkribering [läge] (kallad|som|med namnet) {name}
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) transkribera [text|ljud]
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) transkribera [text|ljud] (kallad|som) {name}
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) (spela in|skriva) (text|ord)
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) (spela in|skriva) (text|ord) (kallad|som|med namnet) {name}
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) att spara (till text|talade ord)
+[(kan du|kan vi|låt oss)] (börja|starta|initiera|aktivera) tal till text [konvertering|läge]
+gör en anteckning
+gör en anteckning (kallad|som|med namnet) {name}
