@@ -24,7 +24,7 @@ begynd at skrive tekst som {name}
 begynd at tage noter
 begynd at tage noter kald venligst {name}
 begynd at tage noter med navnet {name}
-begynd at tage noter med navnet {navn}
+begynd at tage noter med navnet {name}
 begynd at tage noter nu kald venligst {name}
 begynd at tage noter nu med navnet {name}
 begynd at tage tekstnoter
@@ -53,7 +53,7 @@ begynde at optage tekst som {name}
 begynde at registrere verbal information
 begynde at skrive fra stemmen
 begynde at skrive noter ned
-begynde at tage diktat med navnet {navn}
+begynde at tage diktat med navnet {name}
 begynde at tage noter
 begynde at tage noter med navnet {name}
 begynde at tage noter nu
