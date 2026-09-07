@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.3.0a1) (2026-09-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.27a1...0.3.0a1)
+
+**Merged pull requests:**
+
+- feat: pt-PT, kab, nl-NL, sv-SE locale parity [\#109](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/109) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.27a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.27a1) (2026-09-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.26a3...0.2.27a1)
