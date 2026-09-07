@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.27a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.27a1) (2026-09-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.26a3...0.2.27a1)
+
+**Merged pull requests:**
+
+- fix: repair intent lines with localised slot names or broken syntax [\#110](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/110) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.26a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.2.26a3) (2026-08-31)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.2.26a2...0.2.26a3)
