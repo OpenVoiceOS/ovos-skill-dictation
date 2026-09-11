@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.2a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.4.2a1) (2026-09-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.4.1a1...0.4.2a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): add missing intents/name.entity for 7 locales, fix da-DK path [\#116](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/116) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.4.1a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.4.1a1) (2026-09-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.4.0a1...0.4.1a1)
