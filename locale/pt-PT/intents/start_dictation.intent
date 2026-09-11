@@ -1,0 +1,16 @@
+[(podes|podemos|vamos)] (começar|iniciar|ativar) [a tomar] ditado [modo]
+[(podes|podemos|vamos)] (começar|iniciar|ativar) [a tomar] ditado [modo] (chamado|como|com o nome) {name}
+[(podes|podemos|vamos)] (começar|iniciar|ativar) (a tomar notas|a fazer anotações|tomada de notas)
+[(podes|podemos|vamos)] (começar|iniciar|ativar) (a tomar notas|a fazer anotações|tomada de notas) (chamado|como|com o nome) {name}
+[(podes|podemos|vamos)] (começar|iniciar|ativar) (a captura de texto|captura de texto) [modo]
+[(podes|podemos|vamos)] (começar|iniciar|ativar) (a captura de texto|captura de texto) [modo] (chamado|como|com o nome) {name}
+[(podes|podemos|vamos)] (começar|iniciar|ativar) [a] transcrição [modo]
+[(podes|podemos|vamos)] (começar|iniciar|ativar) [a] transcrição [modo] (chamado|como|com o nome) {name}
+[(podes|podemos|vamos)] (começar|iniciar|ativar) a transcrever [texto|áudio]
+[(podes|podemos|vamos)] (começar|iniciar|ativar) a transcrever [texto|áudio] (chamado|como) {name}
+[(podes|podemos|vamos)] (começar|iniciar|ativar) a (gravar|escrever) (texto|palavras)
+[(podes|podemos|vamos)] (começar|iniciar|ativar) a (gravar|escrever) (texto|palavras) (chamado|como|com o nome) {name}
+[(podes|podemos|vamos)] (começar|iniciar|ativar) a guardar (em texto|as palavras faladas)
+[(podes|podemos|vamos)] (começar|iniciar|ativar) (conversão de fala em texto|conversão de voz em texto) [modo]
+faz uma nota
+faz uma nota (chamada|como|com o nome) {name}

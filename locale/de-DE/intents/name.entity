@@ -1,0 +1,12 @@
+# Beispieltitel, unter denen ein Diktat gespeichert werden kann; das {name}-Feld
+# akzeptiert Freitext, diese Werte lehren die Engine nur die Position des Feldes.
+einkaufsliste
+besprechungsnotizen
+einkaufszettel
+to-do-liste
+tagebuch
+tagebucheintrag
+arbeitsprotokoll
+rezept
+ideen
+erinnerungsnotiz

@@ -1,0 +1,16 @@
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) [met] dictaat [modus]
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) [met] dictaat [modus] (genaamd|als|met de naam) {name}
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) (met notities maken|notities nemen)
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) (met notities maken|notities nemen) (genaamd|als|met de naam) {name}
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) (tekst vastleggen|tekst opnemen) [modus]
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) (tekst vastleggen|tekst opnemen) [modus] (genaamd|als|met de naam) {name}
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) [tekst] transcriptie [modus]
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) [tekst] transcriptie [modus] (genaamd|als|met de naam) {name}
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) met transcriberen [van tekst|van audio]
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) met transcriberen [van tekst|van audio] (genaamd|als) {name}
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) met (opnemen|schrijven) van (tekst|woorden)
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) met (opnemen|schrijven) van (tekst|woorden) (genaamd|als|met de naam) {name}
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) met opslaan (naar tekst|van gesproken woorden)
+[(kun je|kunnen we|laten we)] (begin|start|activeer|schakel in) spraak naar tekst [conversie|modus]
+maak een notitie
+maak een notitie (genaamd|als|met de naam) {name}
