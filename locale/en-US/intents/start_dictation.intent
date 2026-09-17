@@ -1,0 +1,18 @@
+# Begin a dictation session that transcribes spoken words to a text note.
+# The optional {name} slot names the file the transcript is saved to.
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) [taking] dictation [mode]
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) [taking] dictation [mode] (named|as|for|with [the] name) {name}
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) (taking notes|jotting down notes|note-taking|note-making|note compilation)
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) (taking notes|jotting down notes|note-taking|note-making|note compilation) (named|as|for|with [the] name) {name}
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) (capturing text|text capturing|text capture) [mode]
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) (capturing text|text capturing|text capture) [mode] (named|as|for|with [the] name) {name}
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) [text] transcription [mode|feature]
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) [text] transcription [mode|feature] (named|as|for|with [the] name) {name}
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) transcribing [text|audio]
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) transcribing [text|audio] (named|as) {name}
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) (recording|writing) (text|words)
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) (recording|writing) (text|words) (named|as|for|with [the] name) {name}
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) saving (to text|spoken words)
+[(can you|can we|let's)] (begin|start|initiate|activate|enable) (speech-to-text|voice-to-text) [conversion|recording|mode]
+take a note
+take a note (named|as|for|with [the] name) {name}

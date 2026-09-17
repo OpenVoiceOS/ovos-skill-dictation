@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "active la dictée", "lang": "fr-FR", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "démarre la dictée", "lang": "fr-FR", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "prends des notes sous le nom liste d'épicerie", "lang": "fr-FR", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "arrête la dictée", "lang": "fr-FR", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "désactive la transcription", "lang": "fr-FR", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "stoppe la transcription", "lang": "fr-FR", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}

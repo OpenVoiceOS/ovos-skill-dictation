@@ -1,0 +1,12 @@
+# Example titles a dictation transcript may be saved under; the {name} slot
+# accepts free-form text, these values only teach the engine the slot position.
+shopping list
+meeting notes
+grocery list
+to-do list
+journal
+diary entry
+work log
+recipe
+ideas
+reminder note
