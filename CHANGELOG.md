@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.5.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.4.2a1...0.5.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): fill es-ES and eu-ES gaps against en-US [\#119](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/119) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.4.2a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.4.2a1) (2026-09-11)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.4.1a1...0.4.2a1)
