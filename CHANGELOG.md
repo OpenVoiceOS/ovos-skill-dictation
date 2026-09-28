@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.7.0a2) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.7.0a1...0.7.0a2)
+
+**Merged pull requests:**
+
+- test: multilang runner reads its locales from the golden files on disk [\#130](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/130) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.7.0a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.7.0a1) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.6.0a4...0.7.0a1)
