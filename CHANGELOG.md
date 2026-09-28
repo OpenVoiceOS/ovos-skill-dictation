@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0a1](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.7.0a1) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.6.0a4...0.7.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): machine draft of fa-IR, unvouched [\#128](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/128) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.6.0a4](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.6.0a4) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.6.0a3...0.6.0a4)
