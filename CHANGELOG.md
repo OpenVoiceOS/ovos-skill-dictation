@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.6.0a3) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.6.0a2...0.6.0a3)
+
+**Merged pull requests:**
+
+- locale: draft es-CO from es-ES [\#124](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/124) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.6.0a2](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.6.0a2) (2026-09-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.6.0a1...0.6.0a2)
