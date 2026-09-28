@@ -1,0 +1,57 @@
+# Begin a dictation session that transcribes spoken words to a text note.
+# The optional {name} slot names the file the transcript is saved to.
+rozpocząć dyktację
+Dyktacja rozpocząć
+inicjuj dyktację
+aktywuj dyktację
+rozpocznij dyktowanie o nazwie {name}
+Zacznij dyktowanie o nazwie {name}
+inicjuj dyktację o nazwie {name}
+aktywuj dyktację o nazwie {name}
+rozpocząć przyjmowanie notatek
+inicjuj wpisywanie
+uruchamianie przyjmowania notatek
+rozpocząć przyjmowanie notatek z nazwą {name}
+inicjuj przyjmowanie notatek o nazwie {name}
+uruchamianie przyjmowania notatek {name}
+rozpocząć przechwytywanie tekstu
+rozpocznij przechwytywanie tekstu
+aktywuj tekst przechwytywania
+zacznij przechwytawać tekst o nazwie {name}
+uruchamianie przechwytywania tekstu o nazwie {name}
+aktywuj przechwytywanie tekstu o nazwie {name}
+rozpocząć transkrypcję
+wszczęć transklikację
+aktywacja transkrypcji
+rozpocząć transkrypcję o nazwie {name}
+inicjuj transkrypcję o nazwie {name}
+aktywować transkrypcję pod nazwą {name}
+rozpocząć przepisywanie
+rozpocząć transkryptowanie
+rozpocząć transklikowanie
+aktywować transkripcję
+rozpocząć transkryptowanie nazw {name}
+rozpocznij transkryptowanie nazw {name}
+inicjuj transkryptowanie {name}
+aktywuj transkrypcję z nazwem {name}
+rozpocznij zapisywanie tekstu
+rozpocznij nagrywanie tekstu
+uruchamianie tekstu nagrywającego
+aktywuj tekst nagrywania
+rozpocznij zapisanie tekstu o nazwie {name}
+rozpocząć nagrywanie tekstu o nazwie {name}
+inicjuj tekst nagrywający o nazwie {name}
+aktywuj tekst nagrywający o nazwie {name}
+zacząć zapisywanie do tekstu
+rozpocznij zapisywanie do tekstu
+inicjuj zapisywanie do tekstu
+aktywuj zapisywanie do tekstu
+rozpocząć mowy do tekstu
+rozpocząć mówanie do tekstu
+inicjuj przemówienie do tekstu
+Uaktywnij mówcę do tekstu
+przyjmij notatkę
+uchwyć notatkę o nazwie {name}
+przyjmij notatki jako {name}
+wziąć notatki dla {name}
+użyć notatki z nazwą {name}

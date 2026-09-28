@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "activar captura de texto", "lang": "gl-ES", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "empezar captura de texto co nome notas da reunión", "lang": "gl-ES", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "podes iniciar o ditado co nome lista de comestibles", "lang": "gl-ES", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "cancelar a captura de texto", "lang": "gl-ES", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "imos rematar a transcrición", "lang": "gl-ES", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "rematar o ditado", "lang": "gl-ES", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}

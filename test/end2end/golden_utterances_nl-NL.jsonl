@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kun je begin met dictaat modus", "lang": "nl-NL", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kun je begin met transcriberen van tekst", "lang": "nl-NL", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "maak een notitie genaamd boodschappenlijstje", "lang": "nl-NL", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kun je stop met dictaat", "lang": "nl-NL", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kun je stop tekst vastleggen", "lang": "nl-NL", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kun je deactiveer tekst dictaat modus", "lang": "nl-NL", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}

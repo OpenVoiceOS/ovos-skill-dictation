@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "inizia la dettatura", "lang": "it-IT", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "avvia la trascrizione", "lang": "it-IT", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "prendi nota", "lang": "it-IT", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "ferma la dettatura", "lang": "it-IT", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "termina la dettatura", "lang": "it-IT", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "ferma la trascrizione", "lang": "it-IT", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}

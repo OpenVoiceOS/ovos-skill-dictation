@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kan du börja med diktering läge", "lang": "sv-SE", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kan du börja transkribera text", "lang": "sv-SE", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "gör en anteckning kallad matlista", "lang": "sv-SE", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kan du stoppa med diktering", "lang": "sv-SE", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kan du stoppa textinsamling", "lang": "sv-SE", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "kan du avaktivera text diktering läge", "lang": "sv-SE", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}

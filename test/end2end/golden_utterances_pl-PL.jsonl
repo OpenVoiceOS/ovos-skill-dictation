@@ -1,0 +1,3 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "rozpocząć dyktację", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "lang": "pl-PL", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "rozpocznij dyktowanie o nazwie lista zakupów", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "lang": "pl-PL", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "zatrzymaj dyktację", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "lang": "pl-PL", "machine_generated": true}

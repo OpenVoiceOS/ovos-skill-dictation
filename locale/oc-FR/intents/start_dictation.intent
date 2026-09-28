@@ -1,0 +1,19 @@
+# Comença una session de dictat que transcriu las paraulas parladas dins una
+# nòta de tèxt. La ranura {name} opcionala nomena lo fichièr ont se garda la
+# transcripcion.
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [a prene] lo dictat [mòde]
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [a prene] lo dictat [mòde] (nomenat|coma|per|amb [lo] nom) {name}
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) (a prene de nòtas|a apuntar de nòtas|la presa de nòtas|la compilacion de nòtas)
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) (a prene de nòtas|a apuntar de nòtas|la presa de nòtas|la compilacion de nòtas) (nomenada|coma|per|amb [lo] nom) {name}
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) (a capturar tèxt|la captura de tèxt) [mòde]
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) (a capturar tèxt|la captura de tèxt) [mòde] (nomenada|coma|per|amb [lo] nom) {name}
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [la] transcripcion [de tèxt] [mòde|foncion]
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [la] transcripcion [de tèxt] [mòde|foncion] (nomenada|coma|per|amb [lo] nom) {name}
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a transcriure [tèxt|àudio]
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a transcriure [tèxt|àudio] (nomenat|coma) {name}
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a (enregistrar|escriure) (tèxt|paraulas)
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a (enregistrar|escriure) (tèxt|paraulas) (nomenat|coma|per|amb [lo] nom) {name}
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a gardar (en tèxt|las paraulas parladas)
+[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [la] (votz a tèxt|conversion de votz a tèxt) [mòde]
+pren una nòta
+pren una nòta (nomenada|coma|per|amb [lo] nom) {name}
