@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Activar el modo de transcripción de texto con el nombre lista de la compra", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Comenzar a tomar notas", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Comenzar a tomar notas ahora", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Desactiva el dictado", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Desactivar el modo dictado", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Desactivar la transcripción de texto", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "es-CO", "machine_generated": true}

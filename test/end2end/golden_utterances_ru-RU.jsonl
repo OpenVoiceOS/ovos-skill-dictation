@@ -1,3 +1,6 @@
 {"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "начать диктовку", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "lang": "ru-RU", "machine_generated": true}
 {"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Начать диктацию список покупок", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": false, "lang": "ru-RU", "machine_generated": true}
 {"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Прекратить диктовку", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": false, "lang": "ru-RU", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "инициировать диктовку", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "ru-RU", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "Конец диктовки", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "ru-RU", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "отменить диктовку", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "ru-RU", "machine_generated": true}
