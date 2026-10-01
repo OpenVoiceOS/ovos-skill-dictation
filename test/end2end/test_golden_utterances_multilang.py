@@ -7,6 +7,10 @@ as this repo's own ``test_intents_en_us.py``). Intent match is asserted
 directly off the ``ovos.intent.matched`` bus event's ``data.intent_name``
 field, matching this repo's own (now-replaced) ``test_golden_utterances.py``.
 
+Every row runs, including the machine-generated ``needs_manual`` rows: an
+unvouched row still names the intent its template line belongs to, so a row
+that does not match it is a template gap the suite must show.
+
 One MiniCroft is booted per locale (``get_minicroft([SKILL_ID], max_wait=150,
 lang=LANG)``) and torn down before moving to the next locale, avoiding the
 open ovoscope harness bug in the shared secondary_langs boot path that
@@ -40,19 +44,9 @@ assert LANGS, "no golden_utterances_<lang>.jsonl files found"
 
 def _load_rows(lang):
     path = END2END_DIR / f"golden_utterances_{lang}.jsonl"
-    rows = []
-    needs_manual = 0
     with open(path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            row = json.loads(line)
-            if row.get("needs_manual"):
-                needs_manual += 1
-                continue
-            rows.append(row)
-    assert rows or needs_manual, f"{lang}: no golden rows"
+        rows = [json.loads(line) for line in f if line.strip()]
+    assert rows, f"{lang}: no golden rows"
     return rows
 
 
@@ -117,3 +111,10 @@ def test_golden_utterance_multilang(minicroft_factory, row):
     if bug_key in KNOWN_BUGS and not ok:
         pytest.xfail(reason=f"known-bug: {KNOWN_BUGS[bug_key]}")
     assert ok, f"[{row['lang']}] {row['utterance']!r}: expected {expected!r}, got {matched!r}"
+
+
+def test_every_shipping_locale_has_a_golden_file():
+    golden = {p.stem.split("_", 2)[2] for p in END2END_DIR.glob("golden_utterances_*.jsonl")}
+    locale_root = END2END_DIR.parent.parent / "locale"
+    shipping = {d.name for d in locale_root.iterdir() if d.is_dir() and any(d.rglob("*.intent"))}
+    assert golden == shipping, f"golden files {sorted(golden ^ shipping)} differ from shipping locales"
