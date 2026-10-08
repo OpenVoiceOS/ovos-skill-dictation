@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0a4](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.7.0a4) (2026-10-08)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.7.0a3...0.7.0a4)
+
+**Merged pull requests:**
+
+- test: golden utterances for every intent in every shipped locale [\#134](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/134) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.7.0a3](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.7.0a3) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.7.0a2...0.7.0a3)
