@@ -56,7 +56,7 @@ class TestSkillLoading(unittest.TestCase):
 
 class TestNameEntityRegistration(unittest.TestCase):
     """Unit-level, no-MiniCroft proof that ``name.entity`` reaches the
-    padatious pipeline with NO manual ``register_entity_file()`` call
+    intent pipelines with NO manual ``register_entity_file()`` call
     anywhere in this skill.
 
     ovos-workshop>=9.5.0a1 auto-registers every ``.entity`` file shipped
@@ -70,13 +70,13 @@ class TestNameEntityRegistration(unittest.TestCase):
     file and this test goes red -- there is nothing left in the skill to
     register it, since discovery walks the on-disk locale/ directory.
 
-    NOTE: an ``*.entity`` file is training-data bias for a padatious
+    NOTE: an ``*.entity`` file is training-data bias for a
     ``{slot}``, not an admission-control allowlist -- an unlisted value
     remains capturable by the slot. This test only proves the entity
     reaches the engine, not that unknown values get rejected.
     """
 
-    def test_name_entity_reaches_padatious_on_startup(self):
+    def test_name_entity_is_registered_on_startup(self):
         bus = FakeBus()
         captured = []
         bus.on("padatious:register_entity", captured.append)

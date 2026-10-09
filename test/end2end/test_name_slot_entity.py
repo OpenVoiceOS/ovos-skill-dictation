@@ -1,31 +1,15 @@
-"""E2e coverage for the ``{name}`` slot in ``start_dictation.intent`` after
-wiring ``self.register_entity_file("name.entity")`` into ``initialize()``
-(requires ovos-workshop>=9.3.12a1 + ovos-padatious>=2.0.3a1).
+"""E2e coverage for the ``{name}`` slot in ``start_dictation.intent``.
 
-Fixed upstream: ovos-padatious 2.0.3a1 (PyPI) corrected a bug where a
-registered ``.entity`` file made a slot an effectively closed vocabulary
-instead of the scoring hint it's documented to be (INTENT-1 §5.4). Under
-2.0.3a1, an out-of-list slot value still matches, floored into the
-padatious-medium confidence band (~[0.8, 0.92]); in-list values are
-unaffected.
+``name.entity`` lists example titles. An entity file is a scoring hint, not
+a closed vocabulary (INTENT-1 §5.4), so a title that is not in the list must
+still route to ``start_dictation`` and fill the slot.
 
-This skill was already proven immune to the pre-fix bug: its session
-pipeline (``PIPELINE`` below, matching this repo's pre-existing
-test_intents_en_us.py convention) always includes adapt and padacioso
-bands alongside padatious, so even when padatious itself closed the
-{name} slot to unlisted values, padacioso still routed them.
-``test_out_of_list_value_still_routes_via_fallback`` below keeps asserting
-that explicitly, so a future change that narrows this skill's pipeline to
-padatious-only would still be caught by a fallback regression.
+``PIPELINE`` matches this repo's ``test_intents_en_us.py``: adapt and
+padacioso bands. ``PADACIOSO_ONLY_PIPELINE`` drops adapt, so the slot test
+shows that the ``.intent`` template alone routes the unlisted title and
+fills ``{name}``.
 
-``test_out_of_list_value_routes_via_padatious_hint_alone`` adds the direct
-padatious-hint proof from the sibling skills: with a padatious-only
-pipeline (high + medium, no adapt/padacioso), the same unlisted title
-still routes and fills the slot, via ovos-padatious's post-2.0.3a1 hint
-semantics rather than the fallback path.
-
-The registration-wiring proof itself (independent of padatious matching
-behavior) is
+The registration-wiring proof is
 ``test/unittests/test_skill_loading.py::TestNameEntityRegistration``.
 """
 import unittest
@@ -39,20 +23,15 @@ LANG = "en-US"
 
 PIPELINE = [
     "ovos-adapt-pipeline-plugin-high",
-    "ovos-padatious-pipeline-plugin-high",
     "ovos-padacioso-pipeline-plugin-high",
     "ovos-adapt-pipeline-plugin-medium",
-    "ovos-padatious-pipeline-plugin-medium",
     "ovos-padacioso-pipeline-plugin-medium",
     "ovos-adapt-pipeline-plugin-low",
 ]
 
-# Padatious-only, no adapt/padacioso fallback -- isolates the
-# register_entity_file hint behavior itself (requires -medium in the
-# pipeline for the hint band to fire, same as the sibling skill tests).
-PADATIOUS_ONLY_PIPELINE = [
-    "ovos-padatious-pipeline-plugin-high",
-    "ovos-padatious-pipeline-plugin-medium",
+PADACIOSO_ONLY_PIPELINE = [
+    "ovos-padacioso-pipeline-plugin-high",
+    "ovos-padacioso-pipeline-plugin-medium",
 ]
 
 
@@ -93,34 +72,21 @@ class TestNameSlotKnownValuesRoute(unittest.TestCase):
         types = self._types("start dictation named meeting notes", "name-slot-pos-meeting")
         self.assertIn(f"{SKILL_ID}:start_dictation", types)
 
-    def test_out_of_list_value_still_routes_via_fallback(self):
-        """This skill's mixed adapt+padatious+padacioso pipeline routes an
-        unlisted, natural {name} value ("homework") -- proven immune to
-        the pre-2.0.3a1 padatious closed-vocabulary bug via the
-        adapt/padacioso fallback. If this starts failing, the pipeline
-        lost its non-padatious fallback and is now exposed to the same
-        risk as ovos-skill-audio-recording / ovos-skill-color-picker.
-        """
+    def test_out_of_list_value_still_routes(self):
+        """An unlisted, natural {name} value ("homework") routes on the
+        mixed adapt and padacioso pipeline."""
         types = self._types("start dictation named homework", "name-slot-oov-fallback")
         self.assertIn(f"{SKILL_ID}:start_dictation", types)
 
-    def test_out_of_list_value_routes_via_padatious_hint_alone(self):
-        """Post ovos-padatious>=2.0.3a1: with a padatious-only pipeline
-        (no adapt/padacioso fallback), registering name.entity is a
-        scoring HINT, not a closed vocabulary -- an unlisted title
-        ("homework") still matches start_dictation.intent and the
-        {name} slot fills with the literal utterance value.
-        """
+    def test_out_of_list_value_routes_and_fills_slot_on_padacioso_alone(self):
+        """With padacioso alone, an unlisted title still matches
+        start_dictation.intent and the {name} slot holds the spoken value."""
         messages = self._capture(
             "start dictation named homework", "name-slot-hint-homework",
-            pipeline=PADATIOUS_ONLY_PIPELINE,
+            pipeline=PADACIOSO_ONLY_PIPELINE,
         )
         matches = [m for m in messages if m.msg_type == f"{SKILL_ID}:start_dictation"]
-        self.assertTrue(
-            matches,
-            "out-of-list slot value did not route via padatious-only pipeline "
-            "-- ovos-padatious hint semantics (2.0.3a1+) may have regressed"
-        )
+        self.assertTrue(matches, "out-of-list slot value did not route on the padacioso-only pipeline")
         self.assertEqual(matches[0].data.get("name"), "homework")
 
 

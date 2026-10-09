@@ -1,6 +1,12 @@
-{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "شروع دیکتاتوری", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
-{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "آغاز دیکتاتوری", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
-{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "فعال کردن دیکتاتوری", "intent_label": "start_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
-{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "توقف دیکتاتوری", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
-{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "پایان دیکتاتوری", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
-{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "لغو دیکتاتوری", "intent_label": "stop_dictation", "intent_type": "padatious", "needs_manual": true, "lang": "fa-IR", "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "دیکته را شروع کن", "lang": "fa-IR", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "شروع دیکتاتوری"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "شروع به دیکته کن", "lang": "fa-IR", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "آغاز دیکتاتوری"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "حالت دیکته را فعال کن", "lang": "fa-IR", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "فعال کردن دیکتاتوری"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "دیکته را متوقف کن", "lang": "fa-IR", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "توقف دیکتاتوری"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "دیکته را تمام کن", "lang": "fa-IR", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "پایان دیکتاتوری"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "دیکته را لغو کن", "lang": "fa-IR", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "لغو دیکتاتوری"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "می‌خواهم یک یادداشت دیکته کنم", "lang": "fa-IR", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "هر چه می‌گویم بنویس", "lang": "fa-IR", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "تایپ صوتی را شروع کن", "lang": "fa-IR", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "دیکته‌ام تمام شد", "lang": "fa-IR", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "دیگر ننویس", "lang": "fa-IR", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "تایپ صوتی را متوقف کن", "lang": "fa-IR", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}

@@ -1,7 +1,7 @@
 """End-to-end intent routing tests for the en-US locale.
 
 Each canonical utterance is fired through a real MiniCroft and asserted to
-route to the expected padatious intent. Dictation is a conversational skill,
+route to the expected intent on the padacioso pipeline. Dictation is a conversational skill,
 so every case runs in its own session to keep an active dictation session
 from diverting later utterances into ``converse``.
 """
@@ -17,8 +17,7 @@ SKILL_ID = "ovos-skill-dictation.openvoiceos"
 class TestDictationIntentsEnUS(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        # the padatious models for the consolidated dictation intents take a
-        # while to train on CI runners, so allow a generous READY window
+        # allow a generous READY window on slow CI runners
         cls.minicroft = get_minicroft([SKILL_ID], max_wait=300)
 
     @classmethod
@@ -27,20 +26,13 @@ class TestDictationIntentsEnUS(unittest.TestCase):
 
     def _run(self, text, session_id):
         session = Session(session_id)
-        # This skill's intents are ``.intent`` sample files (padatious/
-        # padacioso format), not adapt keywords, so the adapt entries here
-        # never actually match anything -- they're harmless no-ops when
-        # present. ovos-padatious isn't installed in this environment
-        # (heavy native/swig dependency), so include the padacioso bands as
-        # a fallback: without them "Unknown pipeline matcher" filters every
-        # requested component out and every utterance goes unmatched (same
-        # mechanism documented in ovos-skill-volume's end2end suite).
+        # This skill's intents are ``.intent`` sample files, not adapt
+        # keywords, so the adapt entries never match; padacioso does the
+        # routing.
         session.pipeline = [
             "ovos-adapt-pipeline-plugin-high",
-            "ovos-padatious-pipeline-plugin-high",
             "ovos-padacioso-pipeline-plugin-high",
             "ovos-adapt-pipeline-plugin-medium",
-            "ovos-padatious-pipeline-plugin-medium",
             "ovos-padacioso-pipeline-plugin-medium",
             "ovos-adapt-pipeline-plugin-low",
         ]

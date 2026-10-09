@@ -4,8 +4,8 @@
   "name": "Dictation skill",
   "description": "continuously transcribes user speech to text file while enabled",
   "examples": [
-    "شروع دیکتاتوری",
-    "توقف دیکتاتوری"
+    "شروع دیکته",
+    "توقف دیکته"
   ],
   "tags": [
     "productivity"
