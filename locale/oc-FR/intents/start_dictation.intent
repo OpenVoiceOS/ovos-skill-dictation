@@ -1,19 +1,32 @@
 # Comença una session de dictat que transcriu las paraulas parladas dins una
 # nòta de tèxt. La ranura {name} opcionala nomena lo fichièr ont se garda la
 # transcripcion.
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [a prene] lo dictat [mòde]
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [a prene] lo dictat [mòde] (nomenat|coma|per|amb [lo] nom) {name}
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) (a prene de nòtas|a apuntar de nòtas|la presa de nòtas|la compilacion de nòtas)
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) (a prene de nòtas|a apuntar de nòtas|la presa de nòtas|la compilacion de nòtas) (nomenada|coma|per|amb [lo] nom) {name}
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) (a capturar tèxt|la captura de tèxt) [mòde]
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) (a capturar tèxt|la captura de tèxt) [mòde] (nomenada|coma|per|amb [lo] nom) {name}
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [la] transcripcion [de tèxt] [mòde|foncion]
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [la] transcripcion [de tèxt] [mòde|foncion] (nomenada|coma|per|amb [lo] nom) {name}
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a transcriure [tèxt|àudio]
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a transcriure [tèxt|àudio] (nomenat|coma) {name}
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a (enregistrar|escriure) (tèxt|paraulas)
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a (enregistrar|escriure) (tèxt|paraulas) (nomenat|coma|per|amb [lo] nom) {name}
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) a gardar (en tèxt|las paraulas parladas)
-[(pòdes|podèm|anem)] (comença|inicia|activa|abilita) [la] (votz a tèxt|conversion de votz a tèxt) [mòde]
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) [a prene] lo dictat [mòde]
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) [a prene] lo dictat [mòde] (nomenat|coma|per|amb [lo] nom) {name}
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) (a prene de nòtas|a apuntar de nòtas|la presa de nòtas|la compilacion de nòtas)
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) (a prene de nòtas|a apuntar de nòtas|la presa de nòtas|la compilacion de nòtas) (nomenada|coma|per|amb [lo] nom) {name}
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) (a capturar tèxt|la captura de tèxt) [mòde]
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) (a capturar tèxt|la captura de tèxt) [mòde] (nomenada|coma|per|amb [lo] nom) {name}
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) [la] transcripcion [de tèxt] [mòde|foncion]
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) [la] transcripcion [de tèxt] [mòde|foncion] (nomenada|coma|per|amb [lo] nom) {name}
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) a transcriure [tèxt|àudio]
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) a transcriure [tèxt|àudio] (nomenat|coma) {name}
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) a (enregistrar|escriure) (tèxt|paraulas)
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) a (enregistrar|escriure) (tèxt|paraulas) (nomenat|coma|per|amb [lo] nom) {name}
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) a gardar (en tèxt|las paraulas parladas)
+((pòdes|podèm|anem) (començar|iniciar|activar|abilitar)|comença|inicia|activa|abilita) [la] (votz a tèxt|conversion de votz a tèxt) [mòde]
 pren una nòta
 pren una nòta (nomenada|coma|per|amb [lo] nom) {name}
+vòli dictar (quicòm|un tèxt)
+escriu tot çò que (disi|dicti)
+(pòdes|podèm) aviar lo dictat
+vòli dictar (una letra|un messatge)
+escriu çò que te disi
+vòli far un dictat
+pren en nòta çò que (disi|te disi)
+escriu çò que (dirai|vau dire)
+(pòdes|podèm) prene en nòta çò que (disi|vau dire)
+vòli dictar
+vòli dictar una nòta novèla
+escriu çò que disi (ara|d'ara enlà)
+(escriu|nòta) çò que te disi ara

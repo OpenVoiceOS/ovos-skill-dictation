@@ -1,20 +1,27 @@
 # End the active dictation session and save the captured text.
 zatrzymaj dyktację
-dyktacja końcowa
+zakończ dyktowanie tekstu
 anuluj dyktację
 zakończ dyktację
 przerwanie przyjmowania notatek
 zakończenie przyjmowania notatek
 anuluj przyjmowanie notatek
-zakończ przechwytanie tekstu
-końcowy przechwytywanie tekstu
+przerwij przechwytywanie tekstu
+koniec przechwytywania tekstu
 anuluj przechwytywanie tekstu
 zakończ przechwytywanie tekstu
-transkrypcja zatrzymania
-transkrypcja końcowa
+zatrzymaj transkrypcję
+zakończ transkrypcję
 anulować transkrypcję
 zakończenie transkrypcji
 wyłącz dyktowanie
 wyłącz dyktację
 wyłącz transkrypcję
 wyłączać transkrypcję
+(skończyłem|skończyłam) dyktowanie
+przestań (zapisywać|notować)
+przestań notować co mówię
+wyłącz tryb dyktowania
+koniec dyktowania
+dość (dyktowania|pisania)
+nie (zapisuj|notuj) (już|) (nic|więcej)

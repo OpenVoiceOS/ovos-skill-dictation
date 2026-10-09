@@ -13,7 +13,5 @@ jobs:
       python_version: '3.11'
       install_extras: 'test'
       require_adapt: true
-      require_padatious: true
-      system_deps: 'swig libfann-dev'
       pytest_workers: '0'
       test_path: 'test/end2end/'
