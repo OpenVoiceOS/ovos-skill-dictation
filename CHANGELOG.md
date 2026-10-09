@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0a5](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.7.0a5) (2026-10-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.7.0a4...0.7.0a5)
+
+**Merged pull requests:**
+
+- test: natural golden rows and an m2v gate for every locale [\#136](https://github.com/OpenVoiceOS/ovos-skill-dictation/pull/136) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.7.0a4](https://github.com/OpenVoiceOS/ovos-skill-dictation/tree/0.7.0a4) (2026-10-08)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-dictation/compare/0.7.0a3...0.7.0a4)
