@@ -1,0 +1,12 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "vorrei iniziare a dettare", "lang": "it-IT", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "inizia la dettatura"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "trascrivi tutto quello che sto per dire", "lang": "it-IT", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "avvia la trascrizione"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "segnati quello che ti dico", "lang": "it-IT", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "prendi nota"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "basta così con la dettatura", "lang": "it-IT", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "ferma la dettatura"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "la dettatura è finita", "lang": "it-IT", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "termina la dettatura"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "non trascrivere più niente", "lang": "it-IT", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "ferma la trascrizione"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "voglio dettare una nota", "lang": "it-IT", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "scrivi quello che dico", "lang": "it-IT", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "avvia la dettatura chiamata lista della spesa", "lang": "it-IT", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "ho finito di dettare", "lang": "it-IT", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "smetti di scrivere quello che dico", "lang": "it-IT", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "basta con la dettatura", "lang": "it-IT", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}

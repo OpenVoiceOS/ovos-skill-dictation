@@ -1,0 +1,43 @@
+((kun je|kunnen we|laten we) (beginnen|starten) met|begin met|start met|activeer) (het dictaat|de dictaatmodus|dictaat [modus])
+((kun je|kunnen we|laten we) (beginnen|starten) met|begin met|start met|activeer) (het dictaat|de dictaatmodus|dictaat [modus]) (genaamd|als|met de naam) {name}
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met (notities maken|notities nemen)
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met (notities maken|notities nemen) (genaamd|als|met de naam) {name}
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met (tekst vastleggen|tekst opnemen)
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met (tekst vastleggen|tekst opnemen) (genaamd|als|met de naam) {name}
+((kun je|kunnen we|laten we) (beginnen|starten) met|begin met|start met|activeer) [de] [tekst] transcriptie [modus]
+((kun je|kunnen we|laten we) (beginnen|starten) met|begin met|start met|activeer) [de] [tekst] transcriptie [modus] (genaamd|als|met de naam) {name}
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met transcriberen [van tekst|van audio]
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met transcriberen [van tekst|van audio] (genaamd|als) {name}
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met (opnemen|schrijven) van (tekst|woorden)
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met (opnemen|schrijven) van (tekst|woorden) (genaamd|als|met de naam) {name}
+((kun je|kunnen we|laten we) (beginnen|starten)|begin|start) met opslaan (naar tekst|van gesproken woorden)
+((kun je|kunnen we|laten we) (beginnen|starten) met|begin met|start met|activeer) spraak naar tekst [conversie|modus]
+maak een notitie
+maak een notitie (genaamd|als|met de naam) {name}
+ik (wil|zou graag) (iets|een tekst) dicteren
+(schrijf|typ) alles op wat ik zeg
+schrijf mee wat ik zeg
+zet de dicteermodus aan
+begin met dicteren
+ik wil (graag|) een (notitie|memo|tekst) inspreken
+schrijf (voor mij|even) op wat ik zeg
+noteer wat ik zeg
+(laten we|kunnen we|wil je) beginnen met dicteren
+schrijf op wat ik (dicteer|vertel)
+kun je (het dictaat|de dicteermodus) (starten|aanzetten)
+ik wil (iets|een notitie|een brief) gaan dicteren
+ik ga (nu|even) dicteren
+(start|ga) met dicteren
+ik wil dicteren
+(begin|start) dictaat [modus]
+(begin|start) dictaat [modus] (genaamd|als|met de naam) {name}
+(begin|start) notities nemen
+(begin|start) notities nemen (genaamd|als|met de naam) {name}
+(begin|start) (tekst vastleggen|tekst opnemen) [modus]
+(begin|start) (tekst vastleggen|tekst opnemen) [modus] (genaamd|als|met de naam) {name}
+(begin|start) [tekst] transcriptie [modus]
+(begin|start) [tekst] transcriptie [modus] (genaamd|als|met de naam) {name}
+(begin|start) spraak naar tekst [conversie|modus]
+schakel ([het] dictaat|de dictaatmodus) in
+schakel de [tekst] transcriptie in
+(kun je|kunnen we) (het dictaat|de transcriptie) (activeren|inschakelen)

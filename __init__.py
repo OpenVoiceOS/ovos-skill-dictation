@@ -104,6 +104,10 @@ class DictationSkill(ConversationalSkill):
         self.bus.emit(message.forward("recognizer_loop:state.set",
                                       {"mode": self.default_listen_mode}))
 
+        if sess.session_id not in self.dictation_sessions:
+            # nothing was dictated for this session, restore the listener and bail
+            return
+
         path = f"{os.path.expanduser('~')}/Documents/dictations"
         os.makedirs(path, exist_ok=True)
         name = self.dictation_sessions[sess.session_id]["file_name"] or time.time()
@@ -137,16 +141,16 @@ class DictationSkill(ConversationalSkill):
         """
         Handle a stop-dictation intent by notifying the user and stopping any active dictation.
         
-        If there is no active dictation for the session, speaks the "stop" dialog; otherwise speaks "not_dictating". Always invokes stop_dictation to ensure dictation is terminated and saved as appropriate.
-        
+        If there is no active dictation for the session, speaks the "not_dictating" dialog; otherwise speaks "stop". Always invokes stop_dictation to ensure dictation is terminated and saved as appropriate.
+
         Parameters:
             message: The incoming intent message containing session and intent data.
         """
         sess = SessionManager.get(message)
         if not self.is_dictating(sess):
-            self.speak_dialog("stop")
-        else:
             self.speak_dialog("not_dictating")
+        else:
+            self.speak_dialog("stop")
         self.stop_dictation(message)
 
     def can_stop(self, message: Message) -> bool:
@@ -175,7 +179,7 @@ class DictationSkill(ConversationalSkill):
     def converse(self, message):
         utterance = message.data["utterances"][0]
         sess = SessionManager.get(message)
-        if self.voc_match(utterance, "StopKeyword"):
+        if self.voc_match(utterance, "stop_keyword"):
             self.handle_stop_dictation_intent(message)
         else:
             if sess.session_id == "default":
