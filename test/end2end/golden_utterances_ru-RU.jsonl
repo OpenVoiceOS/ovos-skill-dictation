@@ -1,0 +1,12 @@
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "я хочу начать диктовать", "lang": "ru-RU", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "начать диктовку"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "начни диктовку с названием список покупок", "lang": "ru-RU", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "Начать диктацию список покупок"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "всё, хватит диктовать", "lang": "ru-RU", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "Прекратить диктовку"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "начни диктовку", "lang": "ru-RU", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "инициировать диктовку"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "на этом диктовка окончена", "lang": "ru-RU", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "Конец диктовки"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "не надо больше ничего записывать", "lang": "ru-RU", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true, "rewritten_from": "отменить диктовку"}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "хочу продиктовать заметку", "lang": "ru-RU", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "записывай то, что я говорю", "lang": "ru-RU", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "включи диктовку", "lang": "ru-RU", "intent_label": "start_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "я закончил диктовать", "lang": "ru-RU", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "перестань записывать то, что я говорю", "lang": "ru-RU", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-dictation.openvoiceos", "utterance": "выключи диктовку", "lang": "ru-RU", "intent_label": "stop_dictation", "needs_manual": true, "machine_generated": true}

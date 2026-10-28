@@ -1,0 +1,13 @@
+{
+  "skill_id": "ovos-skill-dictation.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-dictation",
+  "name": "Diktaketa trebetasuna",
+  "description": "aktibatuta dagoen bitartean erabiltzailearen ahotsa etengabe testu fitxategi batera transkribatzen du",
+  "examples": [
+    "hasi diktaketa",
+    "amaitu diktaketa"
+  ],
+  "tags": [
+    "produktibitatea"
+  ]
+}

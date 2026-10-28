@@ -1,0 +1,61 @@
+# Begin a dictation session that transcribes spoken words to a text note.
+# The optional {name} slot names the file the transcript is saved to.
+rozpocząć dyktację
+rozpocznij dyktację
+inicjuj dyktację
+aktywuj dyktację
+rozpocznij dyktowanie o nazwie {name}
+Zacznij dyktowanie o nazwie {name}
+inicjuj dyktację o nazwie {name}
+aktywuj dyktację o nazwie {name}
+rozpocząć przyjmowanie notatek
+inicjuj wpisywanie
+uruchamianie przyjmowania notatek
+rozpocząć przyjmowanie notatek z nazwą {name}
+inicjuj przyjmowanie notatek o nazwie {name}
+uruchamianie przyjmowania notatek {name}
+rozpocząć przechwytywanie tekstu
+rozpocznij przechwytywanie tekstu
+aktywuj przechwytywanie tekstu
+zacznij przechwytywać tekst o nazwie {name}
+uruchamianie przechwytywania tekstu o nazwie {name}
+aktywuj przechwytywanie tekstu o nazwie {name}
+rozpocząć transkrypcję
+zainicjuj transkrypcję
+aktywacja transkrypcji
+rozpocząć transkrypcję o nazwie {name}
+inicjuj transkrypcję o nazwie {name}
+aktywować transkrypcję pod nazwą {name}
+rozpocząć przepisywanie
+rozpocznij transkrybowanie
+rozpocząć transkrybowanie
+aktywować transkrypcję
+rozpocząć transkrybowanie o nazwie {name}
+rozpocznij transkrybowanie o nazwie {name}
+inicjuj transkrybowanie {name}
+aktywuj transkrypcję z nazwą {name}
+rozpocznij zapisywanie tekstu
+rozpocznij nagrywanie tekstu
+uruchom nagrywanie tekstu
+aktywuj nagrywanie tekstu
+rozpocznij zapisanie tekstu o nazwie {name}
+rozpocząć nagrywanie tekstu o nazwie {name}
+inicjuj nagrywanie tekstu o nazwie {name}
+aktywuj nagrywanie tekstu o nazwie {name}
+zacząć zapisywanie do tekstu
+rozpocznij zapisywanie do tekstu
+inicjuj zapisywanie do tekstu
+aktywuj zapisywanie do tekstu
+rozpocznij zamianę mowy na tekst
+rozpocząć zamianę mowy na tekst
+inicjuj zamianę mowy na tekst
+Uaktywnij zamianę mowy na tekst
+przyjmij notatkę
+uchwyć notatkę o nazwie {name}
+przyjmij notatki jako {name}
+wziąć notatki dla {name}
+utwórz notatkę z nazwą {name}
+uruchom dyktowanie
+włącz tryb dyktowania
+chcę (coś|tekst) podyktować
+zapisuj (wszystko|) co (mówię|dyktuję)
