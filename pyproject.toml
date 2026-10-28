@@ -18,8 +18,8 @@ dependencies = [
 
 [project.optional-dependencies]
 test = [
-    "ovoscope>=1.11.2a1,<2.0.0",
-    "ovos-m2v-pipeline>=0.32.0a1",
+    "ovoscope>=1.12.1a1,<2.0.0",
+    "ovos-m2v-pipeline>=0.37.3a1",
     "ovos-bus-client>=2.2.0a1",
     "ovos-core>=2.0.0a1",
     "ovos-adapt-parser>=1.6.1a1",
@@ -52,3 +52,6 @@ ovos_skill_dictation = [
     "locale/*/*.dialog",
     "locale/*/*.entity",
 ]
+
+[tool.pytest.ini_options]
+ovoscope_min_routing_rate = 0.85
